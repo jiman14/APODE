@@ -1,0 +1,52 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Schedule note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Schedule note",
+      "Configuration": { "Action": "Set" },
+      "Inputs": { "NotesLoaded": "NotesPanel.NotesLoaded", "status": "MainView.Status", "NoteGuid": "HelperForms.SchedulePanel.NoteGuid" },
+      "Outputs": { "Note": "Note" }
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": { "value": true },
+      "Inputs": { },
+      "Outputs": { "variable": "MainView.SaveFlag" }
+    },  
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": { },
+      "Inputs": { "value": "Globals.Messages.Nota programada" },
+      "Outputs": { "variable": "MainView.FootBarMessage" }
+    },    
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "Note": "Note", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes" }
+    },      
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.LoadNotes" },
+      "Inputs": { },
+      "Outputs": { }    
+    },
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Cron add program",
+      "Configuration": { "program": "&ManageNotes.CheckScheduledNotes", "interval": 5000 },
+      "Inputs": { },
+      "Outputs": {}
+    },     
+  ]
+}

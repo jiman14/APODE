@@ -1,0 +1,33 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Call",
+      "Name": "call_program",
+      "Description": "call program",
+      "Configuration": [ "program" ],      
+      "Inputs": [ "-program" ],      
+      "Outputs": [ ],
+      "Version": "1.0"
+    },
+    {
+      "Guid": "Cron add program",
+      "Name": "Cron add program",
+      "Description": "Cron add program",
+      "Configuration": [ "program", "interval" ],      
+      "Inputs": [ ],
+      "Outputs": [ ],
+      "Version": "1.0"
+    },
+    {
+      "Guid": "Cron remove program",
+      "Name": "Cron remove program",
+      "Description": "Cron remove program",
+      "Configuration": [ "program" ],      
+      "Inputs": [ ],
+      "Outputs": [ ],
+      "Version": "1.0"
+    }
+  ]
+}

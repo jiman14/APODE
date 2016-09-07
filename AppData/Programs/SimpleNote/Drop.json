@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Simple note drop",
+  "Parallel_execution": false,
+  "Description": "Simple note drop",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Drop",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": {}
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Save reordering notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "NotesLoaded": "NotesPanel.NotesLoaded", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes", "SaveFlag": "MainView.SaveFlag" }
+    },
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.SaveNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    },     
+  ]
+}

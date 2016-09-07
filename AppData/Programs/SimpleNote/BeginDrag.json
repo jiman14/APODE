@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Begin drag",
+  "Parallel_execution": false,
+  "Description": "Begin drag",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Begin drag",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { }
+    }
+  ]
+}

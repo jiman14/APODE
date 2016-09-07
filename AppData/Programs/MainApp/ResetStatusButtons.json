@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Reset program buttons",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "ResetStatusButtons",
+      "Configuration": {},      
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": {}
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Change note color",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {
+        "Note": "Note",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 1.84
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.07
+    }
+  ],
+  "Name": "Complete note",
+  "Description": "Complete note",
+  "Status": "UNHANDLED",
+  "Total_time": 1.92,
+  "Last_execution_time": "16/06/2016 11:58:18"
+}

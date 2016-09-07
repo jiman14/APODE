@@ -1,0 +1,19 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load note info",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {},
+      "Total_time": 0.24
+    }
+  ],
+  "Name": "Load note info",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.24,
+  "Last_execution_time": "17/06/2016 14:47:56"
+}

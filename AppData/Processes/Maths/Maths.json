@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "pow",
+      "Name": "basic_operations",
+      "Description": "Basic math operations: pot",
+      "Configuration": [ ],      
+      "Inputs": [ "param1", "param2" ],
+      "Outputs": [ "result" ],
+      "Version": "1.0"
+    },
+    {
+      "Guid": "ope",
+      "Name": "basic_operations",
+      "Description": "Basic math operations: sum, minus, mul, div, mod",
+      "Configuration": [ "operator" ],
+      "Default_Configuration": [ "sum" ],
+      "Inputs": [ "param1", "param2" ],
+      "Outputs": [ "result" ],
+      "Version": "1.0"
+    }
+  ]
+}

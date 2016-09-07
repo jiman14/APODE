@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "SimpleNote mouse move",
+  "Parallel_execution": false,
+  "Description": "SimpleNote mouse move",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "SimpleNote mouse move",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { }
+    }
+  ]
+}

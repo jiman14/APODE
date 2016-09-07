@@ -1,0 +1,50 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Schedule note",
+      "Configuration": {
+        "Action": "Remove"
+      },
+      "Inputs": {
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status",
+        "NoteGuid": "HelperForms.SchedulePanel.NoteGuid"
+      },
+      "Outputs": {
+        "Note": "Note"
+      },
+      "Total_time": 0.02
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.41
+    }
+  ],
+  "Name": "Remove schedule note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.42,
+  "Last_execution_time": "17/06/2016 13:27:44"
+}

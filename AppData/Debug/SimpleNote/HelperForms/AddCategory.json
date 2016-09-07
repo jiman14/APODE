@@ -1,0 +1,38 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set current category",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "CurrentCategory": "CurrentCategory"
+      },
+      "Debug_info": [
+        " ---> view guid: 0177c894-1de0-41c2-be2a-d3d48b16f9f4"
+      ],
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Add category",
+      "Configuration": {},
+      "Inputs": {
+        "Categories": "MainView.Categories",
+        "CurrentCategory": "CurrentCategory"
+      },
+      "Outputs": {
+        "Categories": "MainView.Categories"
+      },
+      "Debug_info": [
+        " ---> view guid: 0177c894-1de0-41c2-be2a-d3d48b16f9f4"
+      ],
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "New note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.03,
+  "Last_execution_time": "09/06/2016 13:39:22"
+}

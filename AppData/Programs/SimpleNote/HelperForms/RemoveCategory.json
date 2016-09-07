@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load schedule panel",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set current category",
+      "Configuration": {  },
+      "Inputs": { },
+      "Outputs": { "CurrentCategory": "CurrentCategory" }
+    },  
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Remove category",
+      "Configuration": { },
+      "Inputs": { "Categories": "MainView.Categories", "CurrentCategory": "CurrentCategory"  },
+      "Outputs": { "Categories": "MainView.Categories" }
+    },
+  ]
+}

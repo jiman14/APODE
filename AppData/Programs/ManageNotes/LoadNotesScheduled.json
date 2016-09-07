@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load notes scheduled",
+  "Parallel_execution": false,
+  "Description": "Load notes scheduled",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {  },
+      "Inputs": { "value": "Globals.Scheduled status" },
+      "Outputs": { "variable": "MainView.Status" }
+    },      
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.RefreshNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    }   
+  ]
+}

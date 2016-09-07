@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Load Context Menu",
+      "Name": "Initialize main form",
+      "Description": "Initialize main form",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Set shortcut keys",
+      "Name": "Set shortcut keys",
+      "Description": "Set shortcut keys",
+      "Version": "1.0",
+      "Configuration": [ "Actions" ],
+      "Inputs": [ ],
+      "Outputs": [ "Program" ]
+    },
+  ]
+}

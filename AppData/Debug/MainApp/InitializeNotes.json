@@ -1,0 +1,69 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "CreateViewNotes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "status": "MainView.Status",
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "Scheduled notes color": "Globals.Scheduled notes color",
+        "Completed notes color": "Globals.Completed notes color"
+      },
+      "Outputs": {
+        "AppStatus": "MainView.AppStatus",
+        "NotesLoaded": "NotesPanel.NotesLoaded"
+      },
+      "Total_time": 0.17
+    },
+    {
+      "Namespace": "UI.Generics",
+      "Guid": "Load Context Menu",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "ResetStatusButtons",
+      "Configuration": {
+        "Buttons": [
+          "bAdd",
+          "bHome",
+          "bComplete",
+          "bSchedule"
+        ]
+      },
+      "Inputs": {
+        "status": "MainView.Status"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Change windows position",
+      "Configuration": {
+        "State": "Normal"
+      },
+      "Inputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Outputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Initializae notes",
+  "Description": "Initializae notes",
+  "Status": "OK",
+  "Total_time": 0.18,
+  "Last_execution_time": "07/09/2016 14:45:55"
+}

@@ -1,0 +1,32 @@
+﻿{
+  "description": "Program base",
+  "type": "object",
+  "properties": {
+    "Guid": { "type": "string" },
+    "Name": { "type": "string" },
+    "Parallel_execution": { "type": "boolean"},
+    "Description": { "type": "string" },
+    "Variables": {
+      "type": "array",
+      "items": {
+        "description": "Variable list",
+        "type": "string"
+      }
+    },
+    "Configuration": { "type": "object" },
+    "Logic": {
+      "type": "array",
+      "items": {
+        "description": "process",
+        "type": "object",
+        "properties": {
+          "Namespace": { "type": "string" },
+          "Guid": { "type": "string" },
+          "Configuration": { "type": "object" },
+          "Inputs": { "type": "object" },
+          "Outputs": { "type": "object" }
+        }
+      }
+    }
+  }
+}

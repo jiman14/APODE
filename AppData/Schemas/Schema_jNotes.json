@@ -1,0 +1,57 @@
+﻿{
+  "Notes": {
+    "Active":{
+      "type": "array",
+      "items": {
+        "description": "Note item",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "datecreated": { "type": "string" },
+          "datetime": { "type": "string" },
+          "idUser": { "type": "string" },
+          "Title": { "type": "string" },
+          "Note": { "type": "string" },
+          "Order": { "type": "integer" },
+          "Category": { "type": "string" },
+          "Color": { "type": "string" },
+          "Status": { "type": "string" },
+          "Schedule": {
+            "description": "Schedule time",
+            "type": "object",
+            "properties": {
+              "ActivationDate": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "Completed":{
+      "type": "array",
+      "items": {
+        "description": "Note item",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "datecreated": { "type": "string" },
+          "datetime": { "type": "string" },
+          "idUser": { "type": "string" },
+          "Title": { "type": "string" },
+          "Note": { "type": "string" },
+          "Order": { "type": "integer" },
+          "Category": { "type": "string" },
+          "Color": { "type": "string" },
+          "Status": { "type": "string" },
+          "Schedule": {
+            "description": "Schedule time",
+            "type": "object",
+            "properties": {
+              "ActivationDate": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "unique id",
+      "Name": "name of process",
+      "Description": "description of process",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    }
+  ]
+}

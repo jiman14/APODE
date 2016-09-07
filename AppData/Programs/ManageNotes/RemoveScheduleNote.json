@@ -1,0 +1,38 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Remove schedule note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Schedule note",
+      "Configuration": { "Action": "Remove" },
+      "Inputs": { "NotesLoaded": "NotesPanel.NotesLoaded", "status": "MainView.Status", "NoteGuid": "HelperForms.SchedulePanel.NoteGuid" },
+      "Outputs": { "Note": "Note" }
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": { },
+      "Inputs": { "value": "Globals.Messages.Nota desprogramada" },
+      "Outputs": { "variable": "MainView.FootBarMessage" }
+    },    
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "Note": "Note", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes" }
+    },      
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.LoadNotes" },
+      "Inputs": { },
+      "Outputs": { }    
+    }
+  ]
+}

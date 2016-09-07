@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [ ],
+  "Controls": [
+    {
+      "Guid": "unique id",
+      "Type": "type of windows form control",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+
+      },
+      "Controls": [],
+      "Events": {
+
+      }
+    }
+  ]
+}

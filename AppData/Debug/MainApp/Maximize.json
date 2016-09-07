@@ -1,0 +1,23 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Change windows position",
+      "Configuration": {
+        "State": "Maximize"
+      },
+      "Inputs": {
+        "FormState": "MainView.FormState"
+      },
+      "Outputs": {
+        "FormState": "MainView.FormState"
+      },
+      "Total_time": 0.02
+    }
+  ],
+  "Name": "Maximize app",
+  "Description": "Maximize app",
+  "Status": "OK",
+  "Total_time": 0.02,
+  "Last_execution_time": "16/06/2016 16:18:39"
+}

@@ -1,0 +1,47 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "New note",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotesActive"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.49
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Reordering notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.02
+    }
+  ],
+  "Name": "New note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.52,
+  "Last_execution_time": "23/06/2016 23:31:51"
+}

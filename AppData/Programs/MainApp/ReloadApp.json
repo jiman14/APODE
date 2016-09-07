@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Reload application program",
+  "Parallel_execution": false,
+  "Description": "Reload application program",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+      {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.SaveNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    },
+  	{
+      "Namespace": "UI.MainApp",
+      "Guid": "ClearNotes",
+      "Configuration": { },
+      "Inputs": { "status": "MainView.Status", "NotesLoaded": "NotesPanel.NotesLoaded" },
+      "Outputs": { }
+    },
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "MainApp.LoadApp" },
+      "Inputs": { },
+      "Outputs": {}
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Open note in word",
+  "Parallel_execution": false,
+  "Description": "Open note in word",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Open note in word",
+      "Configuration": { },
+      "Inputs": { "path": "Globals.Data temp path", "file name": "Globals.Default temp word file name" },
+      "Outputs": {  }         
+    },    
+  ]
+}

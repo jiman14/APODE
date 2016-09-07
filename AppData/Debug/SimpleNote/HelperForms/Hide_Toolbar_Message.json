@@ -1,0 +1,27 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Cron remove program",
+      "Configuration": {
+        "program": "SimpleNote.HelperForms.Hide_Toolbar_Message"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Hide toolbar message form",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Hide toolbar message form",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.0,
+  "Last_execution_time": "07/09/2016 14:45:57"
+}

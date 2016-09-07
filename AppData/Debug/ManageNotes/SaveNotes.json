@@ -1,0 +1,58 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Save notes",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Data path",
+        "file name": "Globals.Default data file name",
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Outputs": {
+        "SaveFlag": "MainView.SaveFlag",
+        "Message": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Set categories",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Meta data file path",
+        "file name": "Globals.Catalogs file name",
+        "Categories": "MainView.Categories"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "SimpleNote.HelperForms.Show_Toolbar_Message"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.01
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Cron add program",
+      "Configuration": {
+        "program": "SimpleNote.HelperForms.Hide_Toolbar_Message",
+        "interval": 2000
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "save note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.01,
+  "Last_execution_time": "07/09/2016 14:45:55"
+}

@@ -1,0 +1,9 @@
+{
+  "processes": [
+    "Aborting program execution 'Application shortcut keys' due errors in: Call"
+  ],
+  "Error": "Error: program var: 'program' not found",
+  "Name": "Application shortcut keys",
+  "Description": "Application shortcut keys",
+  "Error_time": "07/09/2016 14:46:03"
+}

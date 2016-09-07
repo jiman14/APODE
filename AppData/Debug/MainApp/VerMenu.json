@@ -1,0 +1,17 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Ver menú contextual principal",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Ver menu principal",
+  "Description": "Ver menu principal",
+  "Status": "OK",
+  "Total_time": 0.0,
+  "Last_execution_time": "07/09/2016 14:45:41"
+}

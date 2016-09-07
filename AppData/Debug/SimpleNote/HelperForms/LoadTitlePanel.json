@@ -1,0 +1,21 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load title panel",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {
+        "NoteGuid": "HelperForms.SetTitlePanel.NoteGuid"
+      },
+      "Total_time": 0.11
+    }
+  ],
+  "Name": "Load title panel",
+  "Description": "Complete note",
+  "Status": "OK",
+  "Total_time": 0.11,
+  "Last_execution_time": "07/09/2016 14:36:09"
+}

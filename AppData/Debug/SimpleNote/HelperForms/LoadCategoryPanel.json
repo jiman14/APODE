@@ -1,0 +1,28 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load category panel",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note",
+        "Categories": "MainView.Categories"
+      },
+      "Outputs": {
+        "NoteGuid": "HelperForms.SetCategoryPanel.NoteGuid"
+      },
+      "Debug_info": [
+        " ---> view guid: 046f7e91-8f5e-4b65-921e-e092a17d2dab",
+        " ---> note guid: 46a0f5dd-ad66-4412-9efa-51e9fa1e09b8",
+        " ---> note title: 2",
+        " ---> note category: cate 2"
+      ],
+      "Total_time": 1.1
+    }
+  ],
+  "Name": "Set category",
+  "Description": "Complete note",
+  "Status": "OK",
+  "Total_time": 1.12,
+  "Last_execution_time": "09/06/2016 13:39:21"
+}

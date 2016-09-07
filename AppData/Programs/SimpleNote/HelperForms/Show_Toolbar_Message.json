@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Show toolbar message form",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Show toolbar message form",
+      "Configuration": { },
+      "Inputs": { "Message": "MainView.FootBarMessage" },
+      "Outputs": { "Message": "MainView.FootBarMessage" }
+    },
+  ]
+}

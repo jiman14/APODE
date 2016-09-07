@@ -1,0 +1,47 @@
+﻿{
+  "description": "Namespace for processes",
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "Variables": { "type": "array", "items":{ "type": "string" } },
+    "Controls": {
+      "type": "array",
+      "items": {
+        "description": "Process base",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "Assembly": { "type": "string" },
+          "Description": { "type": "string" },
+          "Version": { "type": "string" },
+          "Configuration": { "type": "object" },
+          "Controls": {
+            "type": "array",
+            "items": { "type": "string" }
+            },
+          "Events": { "type": "object" }
+        }
+      }
+    },
+    "Objects": {
+      "type": "array",
+      "items": {
+        "description": "Object base",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "Assembly": { "type": "string" },
+          "Object Name": { "type": "string" },
+          "Description": { "type": "string" },
+          "Version": { "type": "string" },
+          "Configuration": { "type": "object" },          
+          "Methods": { 
+            "type": "object",  
+            "description": "Methods"
+          },          
+          "Events": { "type": "object" }
+        }
+      }
+    },    
+  }
+}

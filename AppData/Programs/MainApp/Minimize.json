@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Minimize",
+  "Parallel_execution": false,
+  "Description": "Minimize",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "Change windows position",
+      "Configuration": { "State": "Minimize"},
+      "Inputs": { "NotifyIcon": "MainView.NotifyIcon", "FormState": "MainView.FormState" },
+      "Outputs": { "NotifyIcon": "MainView.NotifyIcon", "FormState": "MainView.FormState" }
+    }
+  ]
+}

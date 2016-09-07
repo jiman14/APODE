@@ -1,0 +1,258 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [],
+  "Controls": [
+    {
+      "Guid": "NoteInfo",
+      "Type": "Form",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Text": "Propiedades de la nota",
+        "MinimumSize": {
+          "Width": 500,
+          "Height": 380
+        },
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 10.1
+        },
+        "BackColor": "White",
+        "FormBorderStyle": 5, // Dialog border
+        "StartPosition": 1, // Star position screen center
+        "TopMost": false // Show over all
+      },
+      "Controls": ["Content_panel"],
+      "Events": {              
+      }
+    },
+    {
+      "Guid": "Content_panel",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Dock": 5,
+        "BackColor": "White"
+      },
+      "Controls": [ "row_panel_5", "row_panel_4", "row_panel_3", "row_panel_2", "row_panel_1", "row_panel_head"],
+      "Events": {
+      }
+    },  
+     {
+      "Guid": "row_panel_head",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 60,
+        "Dock": 1,
+        "Margin": { "All": 30},
+      },
+      "Controls": ["label_head" ]
+    },
+    {
+      "Guid": "label_head",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 12.1,
+          "FontStyle": 1,
+        },
+        "AutoSize": true,
+        "Text": "Propiedades de la nota",
+        "Left": 140,
+        "Top": 20,        
+      }
+    },
+    {
+      "Guid": "row_panel_1",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_title", "label_title"]
+    },
+    {
+      "Guid": "label_title",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt
+        "Text": "Título:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_title",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+      }
+    },
+    {
+      "Guid": "row_panel_2",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_fecha_c", "label_fecha_c"]
+    },
+    {
+      "Guid": "label_fecha_c",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt       
+        "Text": "Fecha de creación:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_fecha_c",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+      }
+    },
+    {
+      "Guid": "row_panel_3",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_fecha_m", "label_fecha_m"]
+    },
+    {
+      "Guid": "label_fecha_m",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt       
+        "Text": "Fecha de última modificación:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_fecha_m",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+      }
+    },
+    {
+      "Guid": "row_panel_4",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_category", "label_category"]
+    },
+    {
+      "Guid": "label_category",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt       
+        "Text": "Category:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_category",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+      },
+    },   
+    {
+      "Guid": "row_panel_5",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_status", "label_status"]
+    },
+    {
+      "Guid": "label_status",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt       
+        "Text": "Status:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_status",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+      },
+    },
+  ]
+}

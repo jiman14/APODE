@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load context menu",
+  "Parallel_execution": false,
+  "Description": "Load context menu",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Ver menú contextual de nota",
+      "Configuration": { },
+      "Inputs": {  },
+      "Outputs": { }
+    }   
+  ]
+}

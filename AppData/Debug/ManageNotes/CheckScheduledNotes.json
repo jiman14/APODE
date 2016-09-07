@@ -1,0 +1,72 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Check schedules notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "FormState": "MainView.FormState",
+        "NotifyIcon": "MainView.NotifyIcon"
+      },
+      "Outputs": {
+        "Note": "Note",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.02
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotesActive"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.33
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Reordering notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Load notes scheduled",
+  "Description": "Load notes scheduled",
+  "Status": "OK",
+  "Total_time": 0.36,
+  "Last_execution_time": "07/09/2016 14:45:55"
+}

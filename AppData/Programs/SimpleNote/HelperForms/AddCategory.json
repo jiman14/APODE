@@ -1,0 +1,25 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "New note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ "CurrentCategory" ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set current category",
+      "Configuration": {  },
+      "Inputs": { },
+      "Outputs": { "CurrentCategory": "CurrentCategory" }
+    },
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Add category",
+      "Configuration": {  },
+      "Inputs": { "Categories": "MainView.Categories", "CurrentCategory": "CurrentCategory" },
+      "Outputs": { "Categories": "MainView.Categories" }
+    },
+  ]
+}
+

@@ -1,0 +1,126 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Get notes",
+      "Name": "Get notes",
+      "Description": "get notes from a path",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "path", "file name", "status", "-Notes" ],
+      "Outputs": [ "Notes", "AppStatus" ]
+    },
+    {
+      "Guid": "Update note in notes",
+      "Name": "Update note in notes",
+      "Description": "get notes from a path",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "Note", "status" ],
+      "Outputs": [ "Notes" ]
+    },
+    {
+      "Guid": "New note",
+      "Name": "New note",
+      "Description": "Create new note",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes" ],
+      "Outputs": [ "Notes", "SaveFlag" ]
+    },
+    {
+      "Guid": "Delete note",
+      "Name": "Delete note",
+      "Description": "Delete note",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "status"],
+      "Outputs": [ "Notes", "DeleteNoteGuid", "SaveFlag"  ]
+    },    
+    {
+      "Guid": "Save notes",
+      "Name": "Save notes",
+      "Description": "Save notes to file",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "path", "file name", "Notes", "SaveFlag" ],
+      "Outputs": [ "SaveFlag", "Message" ]
+    },
+    {
+      "Guid": "Complete note",
+      "Name": "Complete note",
+      "Description": "Complete note",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "NotesLoaded", "status" ],
+      "Outputs": [ "Note" ]
+    },
+    {
+      "Guid": "Schedule note",
+      "Name": "Schedule note",
+      "Description": "Schedule note",
+      "Version": "1.0",
+      "Configuration": [ "Action"],
+      "Default_Configuration": [ ],
+      "Inputs": [ "NotesLoaded", "status", "NoteGuid" ],
+      "Outputs": [ "Note" ]
+    },  
+    {
+      "Guid": "Check schedules notes",
+      "Name": "Check schedules notes",
+      "Description": "Check schedules notes",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "FormState", "NotifyIcon" ],
+      "Outputs": [ "Note", "SaveFlag" ]
+    },  
+    {
+      "Guid": "Get categories",
+      "Name": "Get categories",
+      "Description": "Get categories",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "path", "file name" ],
+      "Outputs": [ "Categories" ]
+    },     
+    {
+      "Guid": "Set categories",
+      "Name": "Set categories",
+      "Description": "Set categories",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "path", "file name", "Categories" ],
+      "Outputs": [  ]
+    }, 
+    {
+      "Guid": "Add category",
+      "Name": "Add category",
+      "Description": "Add category",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Categories", "CurrentCategory" ],
+      "Outputs": [ "Categories"  ]
+    }, 
+    {
+      "Guid": "Remove category",
+      "Name": "Remove category",
+      "Description": "Remove category",
+      "Version": "1.0",
+      "Configuration": [  ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Categories", "CurrentCategory" ],
+      "Outputs": [ "Categories" ]
+    },
+  ]
+}

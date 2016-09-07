@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load schedule panel",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load schedule panel",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": { "NoteGuid": "HelperForms.SchedulePanel.NoteGuid" }
+    },
+  ]
+}

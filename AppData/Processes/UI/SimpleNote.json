@@ -1,0 +1,276 @@
+{
+  "$schema": "..\\..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Load",
+      "Name": "Initialize main form",
+      "Description": "Initialize main form",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Copy note text",
+      "Name": "Copy note text",
+      "Description": "Copy note text",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Copy note plain text",
+      "Name": "Copy note plain text",
+      "Description": "Copy note plain text",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Paste note text",
+      "Name": "Paste note text",
+      "Description": "Paste note text",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },        
+    {
+      "Guid": "Ver menú contextual de nota",
+      "Name": "Ver menú contextual de nota",
+      "Description": "Ver menú contextual de nota",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Set category",
+      "Name": "Set category",
+      "Description": "Set category",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "NoteGuid"],
+      "Outputs": [ "Note" ]
+    },
+    {
+      "Guid": "Set title",
+      "Name": "Set title",
+      "Description": "Set title",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "NoteGuid"],
+      "Outputs": [ "Note" ]
+    },
+    {
+      "Guid": "Text changed",
+      "Name": "Text changed",
+      "Description": "Text changed",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note"],
+      "Outputs": [ "Note", "SaveFlag" ]
+    },
+    {
+     "Guid":  "RichTextBox link clicked",
+      "Name": "RichTextBox link clicked",
+      "Description":  "RichTextBox link clicked",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+     "Guid":  "Open note in word",
+      "Name": "Open note in word",
+      "Description":  "Open note in word",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "path", "file name" ],
+      "Outputs": [ ]
+    },    
+    {
+     "Guid":  "Send email from default client",
+      "Name": "Send email from default client",
+      "Description":  "Send email from default client",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note" ],
+      "Outputs": [ ]
+    }, 
+    {
+      "Guid": "ResetNoteButtons",
+      "Name": "Reset note buttons",
+      "Description": "Reset note buttons",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note"],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Load note info",
+      "Name": "Load note info",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note" ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Load schedule panel",
+      "Name": "Load schedule panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note" ],
+      "Outputs": [ "NoteGuid" ]
+    },
+    {
+      "Guid": "Change note color",
+      "Name": "",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note" ],
+      "Outputs": [ "Note", "SaveFlag" ]
+    },
+    {
+      "Guid": "Load title panel",
+      "Name": "Load title panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note" ],
+      "Outputs": [ "NoteGuid" ]
+    },  
+    {
+      "Guid": "Set current category",
+      "Name": "Set current category",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ "CurrentCategory" ]
+    },    
+    {
+      "Guid": "Load category panel",
+      "Name": "Load category panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Note", "Categories" ],
+      "Outputs": [ "NoteGuid" ]
+    },   
+    {
+      "Guid": "Set active category",
+      "Name": "Set active category",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },   
+    {
+      "Guid": "Remove category",
+      "Name": "Remove category",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Categories" ],
+      "Outputs": [  ]
+    },   
+    {
+      "Guid": "SimpleNote mouse move",
+      "Name": "SimpleNote mouse move",
+      "Description": "SimpleNote mouse move",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },  
+    {
+      "Guid": "Begin drag",
+      "Name": "Begin drag",
+      "Description": "Begin drag",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Drop",
+      "Name": "Drop",
+      "Description": "Drop",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },
+    {      
+      "Guid": "Save reordering notes",
+      "Name": "Save reordering notes",
+      "Description": "Save reordering notes",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "NotesLoaded", "status" ],
+      "Outputs": [ "Notes", "SaveFlag" ]
+    },
+    {      
+      "Guid": "Reordering notes",
+      "Name": "Reordering notes",
+      "Description": "Save reordering notes",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "NotesLoaded", "status" ],
+      "Outputs": [ "Notes" ]
+    },
+    {
+      "Guid": "Show toolbar message form",
+      "Name": "Show toolbar message form",
+      "Description": "Show toolbar message form",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Message" ],
+      "Outputs": [ "Message" ]
+    },    
+    {
+      "Guid": "Hide toolbar message form",
+      "Name": "Hide toolbar message form",
+      "Description": "Hide toolbar message form",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },        
+  ]  
+}

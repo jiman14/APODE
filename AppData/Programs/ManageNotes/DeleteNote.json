@@ -1,0 +1,46 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Delete note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ "DeleteNoteGuid" ],
+  "Configuration": {},
+  "Logic": [
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Delete note",
+      "Configuration": {  },
+      "Inputs": { "Notes": "MainView.Notes", "status": "Globals.Home status" },
+      "Outputs": { "Notes": "MainView.Notes", "DeleteNoteGuid": "DeleteNoteGuid", "SaveFlag": "MainView.SaveFlag" }
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": { },
+      "Inputs": { "value": "Globals.Messages.Nota eliminada" },
+      "Outputs": { "variable": "MainView.FootBarMessage" }
+    },    
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.SaveNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    },     
+   {
+     "Namespace": "UI.MainApp",
+     "Guid": "Free note",
+     "Configuration": { },
+     "Inputs": { "DeleteNoteGuid": "DeleteNoteGuid", "NotesLoaded": "NotesPanel.NotesLoaded" },
+     "Outputs": { "NotesLoaded": "NotesPanel.NotesLoaded" }
+   },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.LoadNotes" },
+      "Inputs": { },
+      "Outputs": { }    
+    }   
+  ]
+}
+

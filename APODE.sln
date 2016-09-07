@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APODE_Core", "APODE_Core\APODE_Core.csproj", "{1841C0D3-D0EA-4728-B3BB-191990F22BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APODE_Console", "APODE_Console\APODE_Console.csproj", "{C8941CF9-A6B9-40BF-B0DC-B32893581D44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APODE_Controls", "APODE_Controls\APODE_Controls.csproj", "{59A38E77-E75B-4ED4-9FC4-010E2D0377FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1841C0D3-D0EA-4728-B3BB-191990F22BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1841C0D3-D0EA-4728-B3BB-191990F22BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1841C0D3-D0EA-4728-B3BB-191990F22BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1841C0D3-D0EA-4728-B3BB-191990F22BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8941CF9-A6B9-40BF-B0DC-B32893581D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8941CF9-A6B9-40BF-B0DC-B32893581D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8941CF9-A6B9-40BF-B0DC-B32893581D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8941CF9-A6B9-40BF-B0DC-B32893581D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A38E77-E75B-4ED4-9FC4-010E2D0377FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A38E77-E75B-4ED4-9FC4-010E2D0377FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A38E77-E75B-4ED4-9FC4-010E2D0377FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A38E77-E75B-4ED4-9FC4-010E2D0377FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

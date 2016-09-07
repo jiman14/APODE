@@ -1,0 +1,22 @@
+{
+  "processes": [
+    {
+      "Namespace": "JSonNodes",
+      "Guid": "SaveNote",
+      "Configuration": {
+        "path": "Data",
+        "file_name": "jNotes"
+      },
+      "Inputs": {
+        "Note": {}
+      },
+      "Outputs": {
+        "Status": {}
+      }
+    }
+  ],
+  "Name": "save note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.01
+}

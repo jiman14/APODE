@@ -1,0 +1,64 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set property in note",
+      "Configuration": {
+        "property": "Title",
+        "value": ""
+      },
+      "Inputs": {
+        "NoteGuid": "HelperForms.SetTitlePanel.NoteGuid"
+      },
+      "Outputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Total_time": 20.82
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set property in note",
+      "Configuration": {
+        "property": "Category",
+        "value": ""
+      },
+      "Inputs": {
+        "NoteGuid": "HelperForms.SetCategoryPanel.NoteGuid"
+      },
+      "Outputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Total_time": 3.64
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "SimpleNote.Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.27
+    }
+  ],
+  "Name": "Save property note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 24.78,
+  "Last_execution_time": "08/06/2016 17:34:16"
+}

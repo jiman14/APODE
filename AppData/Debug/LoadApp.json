@@ -1,0 +1,73 @@
+{
+  "Name": "Load application program",
+  "Description": "Load application program",
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "LoadApp",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 1.63
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "GetNodes",
+      "Configuration": {
+        "path": "Data",
+        "file name": "jNotes"
+      },
+      "Inputs": {
+        "Status": "Active"
+      },
+      "Outputs": {
+        "Notes": [
+          {
+            "Guid": "1",
+            "datecreated": "01/02/2015",
+            "datetime": "18/04/2016 16:47:51",
+            "idUser": "1",
+            "Title": "titulo 1",
+            "Note": "asjkd fasdkf asdk fasd test 1",
+            "Order": 1,
+            "Category": "Desarrollo",
+            "Color": "Green",
+            "Status": "Active",
+            "Schedule": {
+              "ActivationDate": "",
+              "description": ""
+            }
+          },
+          {
+            "Guid": "2",
+            "datecreated": "03/02/2015",
+            "datetime": "18/04/2016 16:26:01",
+            "idUser": "2",
+            "Title": "titulo2",
+            "Note": "test 21a  sdf sdf sdf sdf \" asdfasd ' asd fasd",
+            "Order": 2,
+            "Category": ".net",
+            "Color": "Blue",
+            "Status": "Active",
+            "Schedule": {
+              "ActivationDate": "",
+              "description": ""
+            }
+          }
+        ]
+      },
+      "Total_time": 4.32
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "CreateViewNotes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": ""
+      },
+      "Outputs": {}
+    }
+  ],
+  "Status": "UNHANDLED",
+  "Total_time": 7.92
+}

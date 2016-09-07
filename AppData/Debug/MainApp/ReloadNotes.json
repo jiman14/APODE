@@ -1,0 +1,62 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Get notes",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Data path",
+        "file name": "Globals.Default data file name",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "AppStatus": "MainView.AppStatus",
+        "Notes": "MainView.Notes"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "CreateViewNotes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Outputs": {
+        "AppStatus": "MainView.AppStatus"
+      },
+      "Total_time": 1.19
+    },
+    {
+      "Namespace": "UI.Generics",
+      "Guid": "Load Context Menu",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes"
+      },
+      "Outputs": {}
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "ResetStatusButtons",
+      "Configuration": {
+        "Buttons": [
+          "bAdd",
+          "bHome",
+          "bComplete",
+          "bSchedule"
+        ]
+      },
+      "Inputs": {
+        "status": "MainView.Status"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Reload notes",
+  "Description": "Reload notes",
+  "Status": "UNHANDLED",
+  "Total_time": 1.27,
+  "Last_execution_time": "25/05/2016 11:54:17"
+}

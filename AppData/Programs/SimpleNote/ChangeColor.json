@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Complete note",
+  "Parallel_execution": false,
+  "Description": "Complete note",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Change note color",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": { "Note": "Note", "SaveFlag": "MainView.SaveFlag" }
+    },
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "Note": "Note", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes" }
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.LoadNotes" },
+      "Inputs": { },
+      "Outputs": { }    
+    }
+  ]
+}

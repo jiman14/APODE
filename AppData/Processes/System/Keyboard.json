@@ -1,0 +1,15 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "KeyboardHook register key",
+      "Name": "KeyboardHook register key",
+      "Description": "KeyboardHook register key",
+      "Configuration": [ ],      
+      "Inputs": [ ],
+      "Outputs": [ ],
+      "Version": "1.0"
+    },
+  ]
+}

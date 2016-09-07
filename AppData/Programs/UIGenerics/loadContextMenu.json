@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load context menu",
+  "Parallel_execution": false,
+  "Description": "Load context menu",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.Generics",
+      "Guid": "Load Context Menu",
+      "Configuration": { },
+      "Inputs": {  },
+      "Outputs": { }
+    },
+    {
+      "Namespace": "UI.SimpleNote",     
+      "Guid": "ResetNoteButtons",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": {}
+    }
+  ]
+}

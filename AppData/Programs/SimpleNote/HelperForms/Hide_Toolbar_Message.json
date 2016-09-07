@@ -1,0 +1,25 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Hide toolbar message form",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Cron remove program",
+      "Configuration": { "program": "SimpleNote.HelperForms.Hide_Toolbar_Message" },
+      "Inputs": { },
+      "Outputs": {}
+    },
+    
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Hide toolbar message form",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { }
+    },
+  ]
+}

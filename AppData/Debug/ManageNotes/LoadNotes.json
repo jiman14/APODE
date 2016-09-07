@@ -1,0 +1,40 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.21
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "ClearNotes",
+      "Configuration": {},
+      "Inputs": {
+        "status": "MainView.Status",
+        "NotesLoaded": "NotesPanel.NotesLoaded"
+      },
+      "Outputs": {},
+      "Total_time": 0.01
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "MainApp.InitializeNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.22
+    }
+  ],
+  "Name": "Load notes",
+  "Description": "Load notes",
+  "Status": "UNHANDLED",
+  "Total_time": 0.44,
+  "Last_execution_time": "07/09/2016 14:36:14"
+}

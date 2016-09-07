@@ -1,0 +1,9 @@
+{
+  "processes": [
+    "Aborting program execution 'Load notes scheduled' due errors in: Check schedules notes"
+  ],
+  "Error": "Error: Var: 'FormState' not found in view: MainView",
+  "Name": "Load notes scheduled",
+  "Description": "Load notes scheduled",
+  "Error_time": "27/06/2016 16:30:15"
+}

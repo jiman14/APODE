@@ -1,0 +1,59 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Complete note",
+      "Configuration": {},
+      "Inputs": {
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Note": "Note"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Messages.Nota completada"
+      },
+      "Outputs": {
+        "variable": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.28
+    }
+  ],
+  "Name": "Complete note",
+  "Description": "Complete note",
+  "Status": "OK",
+  "Total_time": 0.28,
+  "Last_execution_time": "27/06/2016 16:34:58"
+}

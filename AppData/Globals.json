@@ -1,0 +1,28 @@
+{
+	"Globals":
+	{
+		"Debug_mode": true,
+		"Show errors in console": true,
+		"Show debug in console": true,
+		"Main view": "MainView",
+		"Data path": "Data",
+		"Data temp path": "Temp",
+		"Default data file name": "jNotes",
+		"Default temp word file name": "wordnote.doc",
+		"Meta data file path": "Data.MetaData",
+		"Catalogs file name": "Catalogs",
+		"Home status": "Active",
+		"Completed status": "Completed",		
+		"Completed notes color": "#DEDEDE",
+		"Scheduled status": "Scheduled",	
+		"Scheduled notes color": "#D7D7FF",
+		"Messages":{
+			"Nota completada": "Nota completada",
+			"Datos guardados": "Datos guardados",
+			"Categoría actualizada": "Categoría actualizada",
+			"Nota eliminada": "Nota eliminada",
+			"Nota desprogramada": "Nota desprogramada",
+			"Nota programada": "Nota programada",
+		}
+	}
+}
