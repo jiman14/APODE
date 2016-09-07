@@ -24,7 +24,7 @@ Las aplicaciones están definidas en dos ubicaciones:
 
 La aplicación de ejemplo es una aplicación de gestión de notas de escritorio. Para verla descargar el código, abrir con Visual Studio 2015 y ejecutar.
 
-Para ejecutar una nueva aplicación utilizar el paquete "instalación en blanco.rar" que hay en la raiz del proyecto.
+Para ejecutar una nueva aplicación utilizar el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
 
 
 
