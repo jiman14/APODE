@@ -1,0 +1,15 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "SetVar",
+      "Name": "Set var",
+      "Description": "Set var",
+      "Configuration": [ "-value" ],      
+      "Inputs": [ "-value"],
+      "Outputs": [ "variable" ],
+      "Version": "1.0"
+    }
+  ]
+}

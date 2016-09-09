@@ -1,0 +1,69 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Delete note",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "status": "Globals.Home status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "DeleteNoteGuid": "DeleteNoteGuid",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 1.39
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Messages.Nota eliminada"
+      },
+      "Outputs": {
+        "variable": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.06
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Free note",
+      "Configuration": {},
+      "Inputs": {
+        "DeleteNoteGuid": "DeleteNoteGuid",
+        "NotesLoaded": "NotesPanel.NotesLoaded"
+      },
+      "Outputs": {
+        "NotesLoaded": "NotesPanel.NotesLoaded"
+      },
+      "Total_time": 0.01
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.36
+    }
+  ],
+  "Name": "Delete note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 1.82,
+  "Last_execution_time": "27/06/2016 16:35:31"
+}

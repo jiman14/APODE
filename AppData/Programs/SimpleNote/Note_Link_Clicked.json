@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Open note link",
+  "Parallel_execution": false,
+  "Description": "Open note link",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.SimpleNote",
+      "Guid": "RichTextBox link clicked",
+      "Configuration": { },
+      "Inputs": {  },
+      "Outputs": {  }         
+    },    
+  ]
+}

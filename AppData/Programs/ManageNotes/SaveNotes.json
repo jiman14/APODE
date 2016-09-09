@@ -1,0 +1,39 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "save note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Save notes",
+      "Configuration": {  },
+      "Inputs": { "path": "Globals.Data path", "file name": "Globals.Default data file name", "Notes" : "MainView.Notes", "SaveFlag": "MainView.SaveFlag" },
+      "Outputs": { "SaveFlag": "MainView.SaveFlag", "Message": "MainView.FootBarMessage" }
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",     
+      "Guid": "Set categories",
+      "Configuration": { },
+      "Inputs": { "path": "Globals.Meta data file path", "file name": "Globals.Catalogs file name", "Categories": "MainView.Categories" },
+      "Outputs": { } 
+    },
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "SimpleNote.HelperForms.Show_Toolbar_Message" },
+      "Inputs": { },
+      "Outputs": { }
+    },
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Cron add program",
+      "Configuration": { "program": "SimpleNote.HelperForms.Hide_Toolbar_Message", "interval": 2000 },
+      "Inputs": { },
+      "Outputs": { }
+    },       
+  ]
+}
+

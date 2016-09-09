@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "program name",
+  "Parallel_execution": false,
+  "Description": "description",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "",     
+      "Guid": "",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { "result" }
+    }
+  ]
+}

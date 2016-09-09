@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json", 
+  "description": "",
+  "processes": [
+    {
+      "Guid": "Version",
+      "Name": "Version",
+      "Description": "",
+      "Configuration": [  ],      
+      "Inputs": [ ],
+      "Outputs": [ ],
+      "Version": "1.0"
+    },
+        {
+      "Guid": "NewProgram",
+      "Name": "New program",
+      "Description": "",
+      "Configuration": [  ],      
+      "Inputs": [ ],
+      "Outputs": [ ],
+      "Version": "1.0"
+    },
+  ]
+}

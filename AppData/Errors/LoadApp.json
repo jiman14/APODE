@@ -1,0 +1,6 @@
+{
+  "Name": "Load application program",
+  "Description": "Load application program",
+  "Error": "La clave proporcionada no se encontró en el diccionario.",
+  "processes": []
+}

@@ -1,0 +1,63 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.Generics",
+      "Guid": "Set shortcut keys",
+      "Configuration": {
+        "Actions": {
+          "Save": {
+            "Modifiers": "Control",
+            "Keycode": "s",
+            "Program": "ManageNotes.ForceSaveNotes"
+          },
+          "Salir": {
+            "Modifiers": "Control",
+            "Keycode": "q",
+            "Program": "MainApp.Exit"
+          },
+          "Enviar email": {
+            "Modifiers": "Control",
+            "Keycode": "e",
+            "Program": "SimpleNote.SendMail"
+          },
+          "Abrir en word": {
+            "Modifiers": "Control",
+            "Keycode": "w",
+            "Program": "SimpleNote.OpenInWord"
+          },
+          "Eliminar nota": {
+            "Modifiers": "Control",
+            "Keycode": "d",
+            "Program": "ManageNotes.DeleteNote"
+          },
+          "Cambiar color": {
+            "Modifiers": "Control",
+            "Keycode": "l",
+            "Program": "SimpleNote.ChangeColor"
+          }
+        }
+      },
+      "Inputs": {},
+      "Outputs": {
+        "Program": "program"
+      }
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": ""
+      },
+      "Inputs": {
+        "program": "program"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Application shortcut keys",
+  "Description": "Application shortcut keys",
+  "Status": "INPUTS",
+  "Total_time": 0.19,
+  "Last_execution_time": "09/09/2016 12:55:53"
+}

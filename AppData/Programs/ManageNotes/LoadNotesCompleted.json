@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load notes completed",
+  "Parallel_execution": false,
+  "Description": "Load notes completed",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {  },
+      "Inputs": { "value": "Globals.Completed status" },
+      "Outputs": { "variable": "MainView.Status" }
+    },      
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.RefreshNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    }
+  ]
+}

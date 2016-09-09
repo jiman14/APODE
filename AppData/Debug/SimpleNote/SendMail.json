@@ -1,0 +1,19 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Send email from default client",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {},
+      "Total_time": 3.19
+    }
+  ],
+  "Name": "Send mail",
+  "Description": "Send mail",
+  "Status": "OK",
+  "Total_time": 3.19,
+  "Last_execution_time": "17/06/2016 13:52:44"
+}

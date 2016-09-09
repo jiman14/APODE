@@ -1,0 +1,22 @@
+{
+  "description": "Errors base schema",
+  "type": "object",
+  "properties": {
+    "Name": { "type": "string" },
+    "Description": { "type": "string" },
+    "Status": { "type": "string" },
+    "Total_time": { "type": "string" },
+    "Last_execution_time": { "type": "string" },
+    "Processes": {
+      "type": "array",
+      "items": {
+        "description": "Process item",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "Process_time": { "type": "string" }
+        }
+      }
+    }
+  }
+}

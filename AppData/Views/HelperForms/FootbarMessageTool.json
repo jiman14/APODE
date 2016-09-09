@@ -1,0 +1,47 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [],
+  "Controls": [
+    {
+      "Guid": "FootbarMessageTool",
+      "Type": "Form",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Size": {
+          "Width": 200,
+          "Height": 30
+        },
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 10.1
+        },
+        "BackColor": "#FFFFB4",
+        "FormBorderStyle": 0, // None
+        "TopMost": true // Show over all
+      },
+      "Controls": ["label_message"],
+      "Events": {              
+      }
+    },
+    {
+      "Guid": "label_message",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "Height": 25,
+        "TextAlign": 16, // Middle rignt
+        "Text": "Datos guardados",
+        "Width": 190,
+        "Dock": 0,
+        "Left": 10,
+        "Top": 8,
+      }
+    },    
+  ]
+}

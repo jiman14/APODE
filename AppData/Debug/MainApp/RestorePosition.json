@@ -1,0 +1,35 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Change windows position",
+      "Configuration": {
+        "State": "Normal"
+      },
+      "Inputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Outputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotesActive"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.07
+    }
+  ],
+  "Name": "Restore position",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.08,
+  "Last_execution_time": "17/08/2016 15:25:24"
+}

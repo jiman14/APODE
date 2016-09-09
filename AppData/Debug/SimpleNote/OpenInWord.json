@@ -1,0 +1,20 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Open note in word",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Data temp path",
+        "file name": "Globals.Default temp word file name"
+      },
+      "Outputs": {},
+      "Total_time": 27.54
+    }
+  ],
+  "Name": "Open note in word",
+  "Description": "Open note in word",
+  "Status": "OK",
+  "Total_time": 27.54,
+  "Last_execution_time": "16/06/2016 12:01:52"
+}

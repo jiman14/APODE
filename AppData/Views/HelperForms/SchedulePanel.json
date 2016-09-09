@@ -1,0 +1,251 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [ "NoteGuid" ],
+  "Controls": [
+    {
+      "Guid": "SchedulePanel",
+      "Type": "Form",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Text": "Schedule note",
+        "MinimumSize": {
+          "Width": 500,
+          "Height": 380
+        },
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 10.1
+        },
+        "BackColor": "White",
+        "FormBorderStyle": 5, // Dialog border
+        "StartPosition": 1, // Star position screen center
+        "TopMost": false // Show over all
+      },
+      "Controls": ["Content_panel"],
+      "Events": {              
+      }
+    },
+    {
+      "Guid": "Content_panel",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Dock": 5,
+        "BackColor": "White"
+      },
+      "Controls": ["row_panel_5", "row_panel_4", "row_panel_3", "row_panel_2", "row_panel_1", "row_panel_head"],
+      "Events": {
+      }
+    },  
+     {
+      "Guid": "row_panel_head",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 60,
+        "Dock": 1,
+        "Margin": { "All": 30},
+      },
+      "Controls": ["label_head" ]
+    },
+    {
+      "Guid": "label_head",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 12.1,
+          "FontStyle": 1,
+        },
+        "AutoSize": true,
+        "Text": "Schedule note",
+        "Left": 140,
+        "Top": 20,        
+      }
+    },
+    {
+      "Guid": "row_panel_1",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_fecha", "label_fecha"]
+    },
+    {
+      "Guid": "label_fecha",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt
+        "Text": "Fecha:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_fecha",
+      "Type": "TextBox",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "width": 200,
+        "Dock": 3,
+      }
+    },
+    {
+      "Guid": "row_panel_2",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["text_hora", "label_hora"]
+    },
+    {
+      "Guid": "label_hora",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "TextAlign": 4, // Middle rignt       
+        "Text": "Hora:",
+        "Width": 250,    
+        "Dock": 3,
+        "Margin": { "Right": 30}
+      }
+    },    
+    {
+      "Guid": "text_hora",
+      "Type": "TextBox",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {     
+        "width": 200,   
+        "Dock": 3,
+      }
+    },
+
+    {
+      "Guid": "row_panel_3",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 30,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["label_desc"]
+    },
+    {
+      "Guid": "label_desc",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "Text": "Descripción:",
+        "Width": 250,    
+        "Left": 20,
+      }
+    },    
+    {
+      "Guid": "row_panel_4",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 100,
+        "Dock": 1,
+      },
+      "Controls": ["text_desc"]
+    },
+    {
+      "Guid": "text_desc",
+      "Type": "TextBox",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {     
+        "Multiline": true,
+        "Dock": 0,
+        "Width": 440,
+        "Height": 100,
+        "Left": 20
+      }
+    },
+
+    {
+      "Guid": "row_panel_5",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Height": 60,
+        "Dock": 1,
+        "Margin": { "All": 5},
+      },
+      "Controls": ["button_save", "button_remove"]
+    },
+    {
+      "Guid": "button_save",
+      "Type": "Button",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "Text": "Guardar",
+        "Width": 150,    
+        "Dock": 0,
+        "Top": 20,
+        "Left": 100,
+      },
+      "Events":{
+        "Click": "ManageNotes.ScheduleNote"
+      }
+    },    
+    {
+      "Guid": "button_remove",
+      "Type": "Button",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "FontStyle": 1, // Bold
+        },
+        "Text": "Eliminar programación",
+        "Width": 200,    
+        "Dock": 0,
+        "Top": 20,
+        "Left": 260,
+      },
+      "Events":{
+        "Click": "ManageNotes.RemoveScheduleNote"
+      }
+    },    
+  ]
+}

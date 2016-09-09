@@ -1,0 +1,21 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Show toolbar message form",
+      "Configuration": {},
+      "Inputs": {
+        "Message": "MainView.FootBarMessage"
+      },
+      "Outputs": {
+        "Message": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Show toolbar message form",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.0,
+  "Last_execution_time": "09/09/2016 12:56:32"
+}

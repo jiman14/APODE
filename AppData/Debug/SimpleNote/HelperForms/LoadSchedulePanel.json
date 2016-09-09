@@ -1,0 +1,21 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load schedule panel",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {
+        "NoteGuid": "HelperForms.SchedulePanel.NoteGuid"
+      },
+      "Total_time": 0.23
+    }
+  ],
+  "Name": "Load schedule panel",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.23,
+  "Last_execution_time": "27/06/2016 16:35:08"
+}

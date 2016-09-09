@@ -1,0 +1,60 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": [ "NotesLoaded" ],
+  "Controls": [
+    {
+      "Guid": "NotesPanel",
+      "Type": "UserControl",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "AutoScroll": true,
+        "Dock": 5,
+      },
+      "Controls": [ "notes_panel" ]
+    },
+    {
+      "Guid": "notes_panel",
+      "Type": "FlowLayoutPanel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "AllowDrop": true,
+        "FlowDirection": 0,
+        "BackColor": "#DEDEDE",
+        "MinimumSize": {
+          "Width": 0,
+          "Height": 0
+        },
+      },
+      "Controls": [ "empty_note_completed", "empty_note_scheduled" ]      
+    },
+    {
+      "Guid": "empty_note_completed",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "BackgroundImage": "%Resources%\\Images\\Gray_clouds_222.png",
+        "Size": {
+          "Width": 247,
+          "Height": 273
+        },
+      }      
+    },   
+    {
+      "Guid": "empty_note_scheduled",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "BackgroundImage": "%Resources%\\Images\\Blue_clouds_222.png",
+        "Size": {
+          "Width": 247,
+          "Height": 273
+        },
+      }      
+    }, 
+  ]
+}

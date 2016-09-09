@@ -1,0 +1,38 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set current category",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "CurrentCategory": "CurrentCategory"
+      },
+      "Debug_info": [
+        " ---> view guid: 762520f1-d449-4334-ab68-185e1c8d32e5"
+      ],
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Remove category",
+      "Configuration": {},
+      "Inputs": {
+        "Categories": "MainView.Categories",
+        "CurrentCategory": "CurrentCategory"
+      },
+      "Outputs": {
+        "Categories": "MainView.Categories"
+      },
+      "Debug_info": [
+        " ---> view guid: 762520f1-d449-4334-ab68-185e1c8d32e5"
+      ],
+      "Total_time": 0.04
+    }
+  ],
+  "Name": "Load schedule panel",
+  "Description": "",
+  "Status": "UNHANDLED",
+  "Total_time": 0.07,
+  "Last_execution_time": "09/06/2016 13:39:14"
+}

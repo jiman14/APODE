@@ -1,0 +1,74 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.Generics",
+      "Guid": "Set shortcut keys",
+      "Configuration": {
+        "Actions": {
+          "Save": {
+            "Modifiers": "Alt",
+            "Keycode": "S",
+            "Program": "ManageNotes.SaveNotes"
+          },
+          "Minimizar": {
+            "Modifiers": "Alt",
+            "Keycode": "M",
+            "Program": "MainApp.Minimize"
+          },
+          "Maximizar": {
+            "Modifiers": "Alt",
+            "Keycode": "N",
+            "Program": "MainApp.Maximize"
+          },
+          "Restaurar posición": {
+            "Modifiers": "Alt",
+            "Keycode": "R",
+            "Program": "MainApp.RestorePosition"
+          },
+          "Salir": {
+            "Modifiers": "Alt",
+            "Keycode": "Q",
+            "Program": "MainApp.Exit"
+          },
+          "Abrir en word": {
+            "Modifiers": "Alt",
+            "Keycode": "O",
+            "Program": "SimpleNote.OpenInWord"
+          },
+          "Eliminar nota": {
+            "Modifiers": "Alt",
+            "Keycode": "D",
+            "Program": "ManageNotes.DeleteNote"
+          },
+          "Cambiar color": {
+            "Modifiers": "Alt",
+            "Keycode": "C",
+            "Program": "SimpleNote.ChangeColor"
+          }
+        }
+      },
+      "Inputs": {},
+      "Outputs": {
+        "Program": "program"
+      },
+      "Total_time": 5.54
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": ""
+      },
+      "Inputs": {
+        "program": "program"
+      },
+      "Outputs": {},
+      "Total_time": 0.05
+    }
+  ],
+  "Name": "Application shortcut keys",
+  "Description": "Application shortcut keys",
+  "Status": "OK",
+  "Total_time": 5.59,
+  "Last_execution_time": "16/06/2016 11:56:52"
+}

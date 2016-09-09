@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Send mail",
+  "Parallel_execution": false,
+  "Description": "Send mail",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Send email from default client",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": {  }         
+    },    
+  ]
+}

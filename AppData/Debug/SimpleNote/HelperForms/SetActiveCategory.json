@@ -1,0 +1,19 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set active category",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Debug_info": [
+        " ---> view guid: 762520f1-d449-4334-ab68-185e1c8d32e5"
+      ]
+    }
+  ],
+  "Name": "Load schedule panel",
+  "Description": "",
+  "Status": "UNHANDLED",
+  "Total_time": 0.03,
+  "Last_execution_time": "09/06/2016 13:39:13"
+}

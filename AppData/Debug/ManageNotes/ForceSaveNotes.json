@@ -1,0 +1,43 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {
+        "value": true
+      },
+      "Inputs": {},
+      "Outputs": {
+        "variable": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Messages.Datos guardados"
+      },
+      "Outputs": {
+        "variable": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.23
+    }
+  ],
+  "Name": "save note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.23,
+  "Last_execution_time": "09/09/2016 12:55:58"
+}

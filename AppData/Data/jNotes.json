@@ -1,0 +1,57 @@
+{
+  "$schema": "C:\\Proyectos2016\\tests\\ConsoleApp\\Schemas\\Schema_jNotes.json",
+  "Notes": {
+    "Active": [
+      {
+        "Guid": "31d0dc13-7a8f-46a7-91ec-1ffb4147eefa",
+        "Datecreated": "10/06/2016 14:02:57",
+        "Datetime": "09/09/2016 12:55:53",
+        "IdUser": "",
+        "Title": "",
+        "Note": "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang3082{\\fonttbl{\\f0\\froman\\fprq2\\fcharset0 Cambria;}{\\f1\\fswiss\\fprq2\\fcharset0 Calibri;}{\\f2\\froman\\fcharset0 Ubuntu;}}\r\n{\\colortbl ;\\red54\\green95\\blue145;\\red0\\green0\\blue0;}\r\n{\\stylesheet{ Normal;}{\\s1 heading 1;}}\r\n\\viewkind4\\uc1\\pard\\keep\\keepn\\s1\\sb480\\sl276\\slmult1\\qc\\cf1\\b\\f0\\fs28 Prueba texto enriquecido\\par\r\n\\pard\\sa200\\sl276\\slmult1\\cf0\\b0\\f1\\fs22\\par\r\n\\cf2\\f2\\fs23 as dksad fasas dfaskd jfaskdj fasdf as\\par\r\n}\r\n",
+        "Order": 5,
+        "Category": "",
+        "Color": "White",
+        "Status": "Active",
+        "Schedule": {
+          "ActivationDate": "",
+          "description": ""
+        }
+      },
+      {
+        "Guid": "2b4acb27-8cd2-4c0c-beee-29219526ff62",
+        "Datecreated": "16/06/2016 16:07:53",
+        "Datetime": "09/09/2016 12:55:13",
+        "IdUser": "",
+        "Title": "titulo prueba",
+        "Note": "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang3082{\\fonttbl{\\f0\\fnil\\fcharset0 Arial;}}\r\n\\viewkind4\\uc1\\pard\\fs20 prueba 2\\par\r\n}\r\n",
+        "Order": 4,
+        "Category": "",
+        "Color": "White",
+        "Status": "Active",
+        "Schedule": {
+          "ActivationDate": "",
+          "description": ""
+        }
+      }
+    ],
+    "Completed": [
+      {
+        "Guid": "0f4db955-2bca-42c2-8af3-d4e08d3d338c",
+        "Datecreated": "16/06/2016 16:05:46",
+        "Datetime": "09/09/2016 12:56:21",
+        "IdUser": "",
+        "Title": "",
+        "Note": "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang3082{\\fonttbl{\\f0\\fnil\\fcharset0 Arial;}}\r\n\\viewkind4\\uc1\\pard\\fs20 prueba 1 \\par\r\n}\r\n",
+        "Order": 0,
+        "Category": "",
+        "Color": "White",
+        "Status": "Completed",
+        "Schedule": {
+          "ActivationDate": "",
+          "description": ""
+        }
+      }
+    ]
+  }
+}

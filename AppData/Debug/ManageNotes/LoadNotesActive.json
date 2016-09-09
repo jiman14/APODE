@@ -1,0 +1,31 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Home status"
+      },
+      "Outputs": {
+        "variable": "MainView.Status"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.RefreshNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.07
+    }
+  ],
+  "Name": "Load notes actives",
+  "Description": "Load notes actives",
+  "Status": "OK",
+  "Total_time": 0.07,
+  "Last_execution_time": "09/09/2016 12:56:28"
+}

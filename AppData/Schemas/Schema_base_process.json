@@ -1,0 +1,36 @@
+﻿{
+  "description": "Namespace for processes",
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "processes": {
+      "type": "array",
+      "items": {
+        "description": "Process base",
+        "type": "object",
+        "properties": {
+          "Guid": { "type": "string" },
+          "Name": { "type": "string" },
+          "Description": { "type": "string" },
+          "Version": { "type": "string" },
+          "Configuration": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "Default_Configuration": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "Inputs": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "Outputs": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

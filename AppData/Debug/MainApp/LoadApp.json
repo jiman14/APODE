@@ -1,0 +1,90 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Home status"
+      },
+      "Outputs": {
+        "variable": "MainView.Status"
+      },
+      "Total_time": 0.04
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {
+        "value": false
+      },
+      "Inputs": {},
+      "Outputs": {
+        "variable": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Get categories",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Meta data file path",
+        "file name": "Globals.Catalogs file name"
+      },
+      "Outputs": {
+        "Categories": "MainView.Categories"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Get notes",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Data path",
+        "file name": "Globals.Default data file name",
+        "status": "Globals.Home status"
+      },
+      "Outputs": {
+        "AppStatus": "MainView.AppStatus",
+        "Notes": "MainView.Notes"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "MainApp.InitializeNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 1.84
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Cron add program",
+      "Configuration": {
+        "program": "&ManageNotes.CheckScheduledNotes",
+        "interval": 5000
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Keyboard",
+      "Guid": "KeyboardHook register key",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Load application program",
+  "Description": "Load application program",
+  "Status": "OK",
+  "Total_time": 1.9,
+  "Last_execution_time": "09/09/2016 12:56:16"
+}

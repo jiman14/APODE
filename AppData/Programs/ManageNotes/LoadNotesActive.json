@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load notes actives",
+  "Parallel_execution": false,
+  "Description": "Load notes actives",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {  },
+      "Inputs": { "value": "Globals.Home status" },
+      "Outputs": { "variable": "MainView.Status" }
+    },      
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.RefreshNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    }
+  ]
+}

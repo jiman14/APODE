@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Text changed",
+  "Parallel_execution": false,
+  "Description": "Text changed",
+  "Variables": [ "Note" ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Text changed",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": { "Note": "Note", "SaveFlag": "MainView.SaveFlag" }         
+    },
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "Note": "Note", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes" }
+    },    
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": { },
+      "Inputs": { "value": "Globals.Messages.Datos guardados" },
+      "Outputs": { "variable": "MainView.FootBarMessage" }
+    }, 
+  ]
+}

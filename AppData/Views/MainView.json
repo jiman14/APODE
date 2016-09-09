@@ -1,0 +1,303 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": ["Notes", "Status", "AppStatus", "Categories", "FormState", "SaveFlag", "FootBarMessage" ],
+  "Controls": [
+    {
+      "Guid": "MainView",
+      "Type": "Form",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "KeyPreview": false, 
+        "Icon": "%Resources%\\Icons\\Notes.ico",
+        "MinimumSize": {
+          "Width": 45,
+          "Height": 280
+        },
+        "FormBorderStyle": 0,
+        "TopMost": false // Show over all
+      },
+      "Controls": ["main_panel", "menu_panel"],
+      "Events": {      
+        "Load": "MainApp.LoadApp",
+      }
+    },
+    {
+      "Guid": "main_panel",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 5,
+        "Margin": { "All": 0},
+      }
+    }, 
+    {
+      "Guid": "menu_panel",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 3,
+        "Width": 45,
+        "Margin": { "All": 0}
+      },
+      "Controls": ["vertical_menu_panel"]
+    }, 
+    {
+      "Guid": "vertical_menu_panel",
+      "Type": "FlowLayoutPanel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Width": 45,
+        "Dock": 5,
+        "FlowDirection": 1,
+        "Margin": { "All": 0},
+        "BackColor": "LightGray"
+      },
+      "Controls": ["bMenu", "bHome", "bAdd", "bComplete", "bSchedule"],
+      "Events": {
+      }
+    },    
+    {
+      "Guid": "bMenu", 
+      "Type": "Button",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 36,
+          "Height": 36
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\menu_green.png"
+      },
+      "Events": {
+        "Click": "MainApp.VerMenu"
+      }
+    },    
+    {
+      "Guid": "bHome", 
+      "Type": "Button",
+      "Description": "Home menu button for active notes flag",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 36,
+          "Height": 36
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\home-green.png",
+        "Selected": {
+          "Image":"%Resources%\\Icons\\home-grey.png"
+        }
+      },
+      "Events": {
+        "Click": "ManageNotes.LoadNotesActive"
+      }
+    },
+    {
+      "Guid": "bAdd", 
+      "Type": "Button",
+      "Description": "Add new note",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 36,
+          "Height": 36
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\add-green.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\add-grey.png"
+        }
+      },
+      "Events": {
+        "Click": "ManageNotes.NewNote"
+      }
+    },
+    {
+      "Guid": "bComplete", 
+      "Type": "Button",
+      "Description": "Show completed notes",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 36,
+          "Height": 36
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\done_green.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\done_grey.png"
+        }
+      },
+      "Events": {
+        "Click": "ManageNotes.LoadNotesCompleted",        
+      }      
+    },
+    {
+      "Guid": "bSchedule",
+      "Type": "Button",
+      "Description": "Show notes with Schedule content",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 36,
+          "Height": 36
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\wall-clock_green.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\wall-clock_grey.png"
+        }
+      },
+      "Events":{
+        "Click": "ManageNotes.LoadNotesScheduled"
+      }      
+    },
+    {
+      "Guid": "contextMenu",
+      "Type": "ContextMenuStrip",
+      "Description": "Context menu for more options",
+      "Version": "1.0",
+      "Configuration": {
+        "Menu items":[
+          {
+            "Name": "Guardar",
+            "Image": "%Resources%\\Icons\\save.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "s"
+            },
+            "Program": "ManageNotes.ForceSaveNotes"
+          },
+          {
+            "Name": "Maximizar",
+            "Image": "%Resources%\\Icons\\maximize.png",            
+            "Program": "MainApp.Maximize"
+          },
+          {
+            "Name": "Minimizar",
+            "Image": "%Resources%\\Icons\\minimize.png",            
+            "Program": "MainApp.Minimize"
+          },          
+          {
+            "Name": "Recargar notas",
+            "Image": "%Resources%\\Icons\\reload.png",            
+            "Program": "&MainApp.ReloadApp"
+          },
+          {
+            "Name": "Restaurar posición",
+            "Image": "%Resources%\\Icons\\restore_position.png",        
+            "Program": "MainApp.RestorePosition"
+          },          
+          {
+            "Name": "Salir",
+            "Image": "%Resources%\\Icons\\exit.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "q"
+            },
+            "Program": "MainApp.Exit"
+          },
+
+        ]
+      }
+    }, 
+  ],
+  "Objects": [
+    {
+      "Guid": "App task icon",
+      "Assembly": "System.Windows.Forms",
+      "Object Name": "System.Windows.Forms.NotifyIcon",
+      "Description": "Show notes with Schedule content",
+      "Version": "1.0",
+      "Configuration": {        
+        "Icon": "%Resources%\\Icons\\Notes.ico",
+        "Text": "Mostrar notas",
+        "Visible": false,
+        "Icon visible":{
+          "Visible": true,
+        }
+      },
+      "Methods": {
+        "Show Scheduled note balloon tip": {
+          "Name": "ShowBalloonTip",
+          "Parameters":{
+            "timeout": 5000,
+            "tipTitle": "Aviso de nota",
+            "tipText": "Nota programada",
+            "tipIcon": 1 // 0: none, 1: info, 2: warning, 3: error
+          }
+        },
+        "Show minimize balloon tip": {
+          "Name": "ShowBalloonTip",
+          "Parameters":{
+            "timeout": 2000,
+            "tipTitle": "Notas minimizadas",
+            "tipText": "Pulse Win + N para abrir o haga click en el icono.",
+            "tipIcon": 1 // 0: none, 1: info, 2: warning, 3: error
+          }
+        },
+      },
+      "Events":{
+        "Click": "MainApp.RestorePosition"
+      }      
+    },
+    {
+      "Guid": "global HookKey",
+      "Assembly": "APODE_Controls.ACControls.dll",
+      "Object Name": "APODE_Controls.KeyboardHook", 
+      "Description": "register global hook key",
+      "Version": "1.0",
+      "Configuration": { },       
+      "Methods": {
+        "Register code for restore": {
+          "Name": "RegisterHotKey",
+          "Parameters": {
+            "Modifier_Keys_str": "Win", // Alt, Control, Shift, Win,        
+            "key_str": "N"
+          }
+        }
+      },
+      "Events":{
+        "KeyPressed": "MainApp.RestorePosition"
+      }   
+    },
+    {
+      "Guid": "OpenXML Document",
+      "Assembly": "APODE_Controls.ACControls.dll",
+      "Object Name": "APODE_Controls.OpenXMLDocument", 
+      "Description": "OpenXML Document",
+      "Version": "1.0",
+      "Configuration": { },       
+      "Methods": {
+        "Create word document":{
+          "Name": "CreateWordDocument",
+          "Parameters": {
+            "file_path": "",
+            "rtfEncodedString": ""
+          }
+        }
+      }
+    }
+  ]
+}

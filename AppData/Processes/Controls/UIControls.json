@@ -1,0 +1,44 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "getControlProperty",
+      "Name": "get property",
+      "Description": "get property of type String, bool or number. To get value from fired control left view_name and control_name empty.",
+      "Version": "1.0",
+      "Configuration": [ "view_name", "control_name", "property" ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ "value", "type" ]
+    },
+    {
+      "Guid": "setControlProperty",
+      "Name": "set property",
+      "Description": "Dynamic set control property from JObject. To get value from fired control left view_name and control_name empty.",
+      "Version": "1.0",
+      "Configuration": [ "view_name", "control_name", "property" ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "value" ],
+      "Outputs": [ ]
+    },    {
+      "Guid": "getVarFromControl",
+      "Name": "get var from control",
+      "Description": "get var from control. To get value from fired control left view_name and control_name empty.",
+      "Version": "1.0",
+      "Configuration": [ "view_name", "control_name", "var_name" ],
+      "Default_Configuration": [ ],
+      "Inputs": [  ],
+      "Outputs": [ "value" ]    
+    },    {
+      "Guid": "setVarInControl",
+      "Name": "set var in control",
+      "Description": "get var in control. To get value from fired control left view_name and control_name empty.",
+      "Version": "1.0",
+      "Configuration": [ "view_name", "control_name", "var_name" ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "value" ],
+      "Outputs": [ ]
+    }      
+  ]
+}

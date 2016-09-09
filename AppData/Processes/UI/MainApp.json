@@ -1,0 +1,77 @@
+{
+  "$schema": "..\\..\\Schemas\\Schema_base_process.json",
+  "description": "",
+  "processes": [
+    {
+      "Guid": "ResetStatusButtons",
+      "Name": "Reset main buttons",
+      "Description": "Reset main buttons",
+      "Version": "1.0",
+      "Configuration": [ "Buttons" ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "status"],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "CreateViewNotes",
+      "Name": "Create notes view",
+      "Description": "Create notes view container",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "Notes", "status", "NotesLoaded", "Scheduled notes color", "Completed notes color" ],
+      "Outputs": [ "AppStatus", "NotesLoaded" ]
+    },
+    {
+      "Guid": "Ver menú contextual principal",
+      "Name": "Ver menú contextual principal",
+      "Description": "Ver menú contextual principal",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },     
+    {
+      "Guid": "ClearNotes",
+      "Name": "Clear notes",
+      "Description": "Clear notes",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "status", "NotesLoaded" ],
+      "Outputs": [ ]
+    },
+    {
+      "Guid": "Exit",
+      "Name": "Exit app",
+      "Description": "Exit app",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ ],
+      "Outputs": [ ]
+    },  
+    {
+      "Guid": "Change windows position",
+      "Name": "Change windows position",
+      "Description": "Restore windows position",
+      "Version": "1.0",
+      "Configuration": [ "State" ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "FormState" ],
+      "Outputs": [ "FormState" ]
+    },
+    {
+      "Guid": "Free note",
+      "Name": "Free note",
+      "Description": "Free note",
+      "Version": "1.0",
+      "Configuration": [ ],
+      "Default_Configuration": [ ],
+      "Inputs": [ "DeleteNoteGuid", "NotesLoaded" ],
+      "Outputs": [ "NotesLoaded" ]
+    },  
+              
+  ]
+}

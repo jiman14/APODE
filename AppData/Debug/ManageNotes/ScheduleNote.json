@@ -1,0 +1,73 @@
+{
+  "processes": [
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Schedule note",
+      "Configuration": {
+        "Action": "Set"
+      },
+      "Inputs": {
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status",
+        "NoteGuid": "HelperForms.SchedulePanel.NoteGuid"
+      },
+      "Outputs": {
+        "Note": "Note"
+      },
+      "Total_time": 0.01
+    },
+    {
+      "Namespace": "System.SetVar",
+      "Guid": "SetVar",
+      "Configuration": {},
+      "Inputs": {
+        "value": "Globals.Messages.Nota programada"
+      },
+      "Outputs": {
+        "variable": "MainView.FootBarMessage"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Update note in notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "Note": "Note",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.LoadNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.23
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Cron add program",
+      "Configuration": {
+        "program": "&ManageNotes.CheckScheduledNotes",
+        "interval": 5000
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Schedule note",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 0.25,
+  "Last_execution_time": "27/06/2016 16:35:14"
+}

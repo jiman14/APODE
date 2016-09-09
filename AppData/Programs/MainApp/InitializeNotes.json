@@ -1,0 +1,42 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Initializae notes",
+  "Parallel_execution": false,
+  "Description": "Initializae notes",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [  	
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "CreateViewNotes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "status": "MainView.Status", "NotesLoaded": "NotesPanel.NotesLoaded", 
+                  "Scheduled notes color": "Globals.Scheduled notes color", "Completed notes color": "Globals.Completed notes color" },
+      "Outputs": { "AppStatus": "MainView.AppStatus", "NotesLoaded": "NotesPanel.NotesLoaded" } 
+    }, 
+    {
+      "Namespace": "UI.Generics",     
+      "Guid": "Load Context Menu",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes" },
+      "Outputs": {} 
+    },
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "ResetStatusButtons",
+      "Configuration": 
+      { 
+      	"Buttons":[ "bAdd", "bHome", "bComplete", "bSchedule" ],
+      },
+      "Inputs": { "status": "MainView.Status" },
+      "Outputs": {}
+    }, 
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "Change windows position",
+      "Configuration": { "State": "Normal"},
+      "Inputs": { "NotifyIcon": "MainView.NotifyIcon", "FormState": "MainView.FormState" },
+      "Outputs": { "NotifyIcon": "MainView.NotifyIcon", "FormState": "MainView.FormState" }
+    }
+  ]
+}

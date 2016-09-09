@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Maximize app",
+  "Parallel_execution": false,
+  "Description": "Maximize app",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "Change windows position",
+      "Configuration": { "State": "Maximize"},
+      "Inputs": { "FormState": "MainView.FormState" },
+      "Outputs": { "FormState": "MainView.FormState" }
+    }
+  ]
+}

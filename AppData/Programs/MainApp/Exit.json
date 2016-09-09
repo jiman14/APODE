@@ -1,0 +1,24 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Exit app",
+  "Parallel_execution": false,
+  "Description": "Exit app",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.SaveNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    },
+    {
+      "Namespace": "UI.MainApp",     
+      "Guid": "Exit",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { }
+    }
+  ]
+}

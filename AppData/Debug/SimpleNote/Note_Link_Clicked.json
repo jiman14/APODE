@@ -1,0 +1,17 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "RichTextBox link clicked",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 2.93
+    }
+  ],
+  "Name": "Text changed",
+  "Description": "Text changed",
+  "Status": "OK",
+  "Total_time": 2.94,
+  "Last_execution_time": "10/06/2016 14:03:36"
+}

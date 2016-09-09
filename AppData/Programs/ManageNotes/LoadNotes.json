@@ -1,0 +1,31 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load notes",
+  "Parallel_execution": false,
+  "Description": "Load notes",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.SaveNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    },      
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "ClearNotes",
+      "Configuration": { },
+      "Inputs": { "status": "MainView.Status", "NotesLoaded": "NotesPanel.NotesLoaded" },
+      "Outputs": { }
+    },       
+    {
+      "Namespace": "System.Call",     
+      "Guid": "Call",
+      "Configuration": { "program": "MainApp.InitializeNotes" },
+      "Inputs": { },
+      "Outputs": {}
+    }
+  ]
+}

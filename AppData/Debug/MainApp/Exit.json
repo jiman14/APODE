@@ -1,0 +1,27 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.02
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Exit",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.02
+    }
+  ],
+  "Name": "Exit app",
+  "Description": "Exit app",
+  "Status": "OK",
+  "Total_time": 0.04,
+  "Last_execution_time": "09/09/2016 12:56:32"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "New note",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {     
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "New note",
+      "Configuration": {  },
+      "Inputs": { "Notes": "MainView.Notes" },
+      "Outputs": { "Notes": "MainView.Notes", "SaveFlag": "MainView.SaveFlag" }
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": { "program": "ManageNotes.LoadNotesActive" },
+      "Inputs": { },
+      "Outputs": { }    
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Reordering notes",
+      "Configuration": { },
+      "Inputs": { "Notes": "MainView.Notes", "NotesLoaded": "NotesPanel.NotesLoaded", "status": "MainView.Status" },
+      "Outputs": { "Notes": "MainView.Notes", "SaveFlag": "MainView.SaveFlag" }
+    },
+  ]
+}
+

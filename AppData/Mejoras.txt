@@ -1,0 +1,25 @@
+// abrir nota en word
+// poner shortcuts
+// poner fondo de notas completas gris y azul para las scheduled
+// enviar por email
+// compartir...
+// poner barra flotante abajo para mensajes cómo "datos guardados" 
+// botón derecho copiar y pegar no funciona
+- poner iconos en menú contextual
+- buscar!
+
+- eliminar plurales, preposiciónes, interjecciones, nexos (antes de introducir un nuevo item y antes de buscar)
+- dar a letras como la h la b o la v el mismo valor binario
+- codificar palabras siguiendo un árbol binario para que ocupen menos
+- hacer un sólo número binario con la convinación: palabra(bin) - note_guid(bin)
+- el note-guid en binario tiene que tener un número fijo de ancho (bits)
+
+- como almacenarlo? palabras duplicadas con distinto guid?
+- cargarlo por bloques y recorrerlo
+
+
+palabra(bin) + note_guid(bin) 
+----------------------------- (si la resta lógica da 0) entonces coges el note_guid
+palabra_buscada(bin) + 0000000
+
+eliminado de noteguid con otra resta lógica pero con 00000 en la palabra

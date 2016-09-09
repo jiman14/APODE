@@ -1,0 +1,17 @@
+{
+  "processes": [
+    {
+      "Namespace": "Console.Basics",
+      "Guid": "Version",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 2.8
+    }
+  ],
+  "Name": "version",
+  "Description": "",
+  "Status": "OK",
+  "Total_time": 2.82,
+  "Last_execution_time": "23/05/2016 18:16:09"
+}

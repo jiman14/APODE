@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "version",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "Console.Basics",     
+      "Guid": "Version",
+      "Configuration": { },
+      "Inputs": { },
+      "Outputs": { }
+    },
+  ]
+}

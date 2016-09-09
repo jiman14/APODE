@@ -1,0 +1,17 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Begin drag",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Begin drag",
+  "Description": "Begin drag",
+  "Status": "OK",
+  "Total_time": 0.0,
+  "Last_execution_time": "07/06/2016 13:55:25"
+}

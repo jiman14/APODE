@@ -1,0 +1,25 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "Change windows position",
+      "Configuration": {
+        "State": "Minimize"
+      },
+      "Inputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Outputs": {
+        "NotifyIcon": "MainView.NotifyIcon",
+        "FormState": "MainView.FormState"
+      },
+      "Total_time": 0.02
+    }
+  ],
+  "Name": "Minimize",
+  "Description": "Minimize",
+  "Status": "OK",
+  "Total_time": 0.02,
+  "Last_execution_time": "17/08/2016 15:25:28"
+}

@@ -1,0 +1,305 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_control.json",
+  "description": "",
+  "Variables": ["Note"],  
+  "Controls": [
+    {
+      "Guid": "SimpleNote",
+      "Type": "UserControl",
+      "Description": "main note container",
+      "Version": "1.0",
+      "Configuration": {
+        "Dock": 0,
+        "AllowDrop": true,
+        "Margin": { "All": 0},
+        "BackColor": "LightGray",
+        "Size": {
+          "Width": 247,
+          "Height": 280
+        },
+      },
+      "Controls": [ "note_panel", "menubar_panel" ],
+      "Events": {
+        "Load": "UIGenerics.loadContextMenu",        
+        "MouseMove": "SimpleNote.SNMouseMove",
+        "DragEnter": "SimpleNote.BeginDrag",
+        "DragDrop": "SimpleNote.Drop",
+      }
+    },
+    {
+      "Guid": "menubar_panel",
+      "Type": "FlowLayoutPanel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {        
+        "Dock": 1,
+        "FlowDirection": 2,
+        "Margin": { "All": 0},        
+        "Size": {
+          "Width": 32,
+          "Height": 36
+        }        
+      },
+      "Controls": [ "bMenu", "bDelete", "bComplete", "bSchedule", "bColor", "label_head" ],
+      "Events": {
+        //"MouseMove": "SimpleNote.SNMouseMove",
+        //"DragEnter": "SimpleNote.BeginDrag",
+        //"DragDrop": "SimpleNote.Drop",
+      }
+
+    },
+    {
+      "Guid": "label_head",
+      "Type": "Label",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {    
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 10.0,
+          "FontStyle": 1,
+        },
+        "ForeColor": "White",
+        "Width": 61,
+        "TextAlign": 16,
+        "Height": 36,
+      }
+    },    
+    {
+      "Guid": "contextMenu",
+      "Type": "ContextMenuStrip",
+      "Description": "Context menu for more options",
+      "Version": "1.0",
+      "Configuration": {
+        "Menu items":[
+          {
+            "Name": "Copiar",
+            "Image": "%Resources%\\Icons\\open_word.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "c"
+            },
+            "Program": "SimpleNote.CopyText"
+          },
+          {
+            "Name": "Copiar texto plano",
+            "Image": "%Resources%\\Icons\\open_word.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "t"
+            },
+            "Program": "SimpleNote.CopyText"
+          },
+          {
+            "Name": "Pegar",
+            "Image": "%Resources%\\Icons\\open_word.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "v"
+            },
+            "Program": "SimpleNote.PasteText"
+          },
+          {
+            "Name": "Abrir en word",
+            "Image": "%Resources%\\Icons\\open_word.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "w"
+            },
+            "Program": "SimpleNote.OpenInWord"
+          },
+          {
+            "Name": "Enviar email",
+            "Image": "%Resources%\\Icons\\enviar_email.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "e"
+            },
+            "Program": "SimpleNote.SendMail"
+          },
+          {
+            "Name": "Eliminar nota",
+            "Image": "%Resources%\\Icons\\del_note.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "d"
+            },
+            "Program": "ManageNotes.DeleteNote"
+          },
+          {
+            "Name": "Más información",
+            "Image": "%Resources%\\Icons\\more_info.png",
+            "Program": "SimpleNote.HelperForms.Load_NoteInfo"
+          },
+          {
+            "Name": "Cambiar color",
+            "Image": "%Resources%\\Icons\\edit_title.png",
+            "ShortcutKeys": {
+              "Modifiers": "Control",
+              "Keycode": "l"
+            },
+            "Program": "SimpleNote.ChangeColor"
+          },
+          {
+            "Name": "Cambiar título",
+            "Image": "%Resources%\\Icons\\edit_title.png",
+            "Program": "SimpleNote.HelperForms.LoadTitlePanel"
+          },
+          {
+            "Name": "Cambiar categoría",
+            "Image": "%Resources%\\Icons\\edit_category.png",            
+            "Program": "SimpleNote.HelperForms.LoadCategoryPanel"
+          }
+        ]
+      }      
+    },     
+    {
+      "Guid": "bMenu",
+      "Type": "Button",
+      "Description": "Menu button",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 30,
+          "Height": 30
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\Menu_short_24.png"
+      },      
+      "Events": {
+        "Click": "SimpleNote.VerMenu"
+      }
+    },   
+    {
+      "Guid": "bDelete",
+      "Type": "Button",
+      "Description": "Delete note",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 30,
+          "Height": 30
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\delete-cross_green.png",
+      },
+      "Events":{
+        "Click": "ManageNotes.DeleteNote"
+      }      
+    },      
+    {
+      "Guid": "bComplete",
+      "Type": "Button",
+      "Description": "Complete note",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 30,
+          "Height": 30
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\done_green_24.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\done_grey_24.png"
+        }
+      },
+      "Events":{
+        "Click": "SimpleNote.Complete"
+      }      
+    },  
+    {
+      "Guid": "bSchedule",
+      "Type": "Button",
+      "Description": "Schedule note",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 30,
+          "Height": 30
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\wall-clock_green_28.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\wall-clock_grey_28.png"
+        }
+      },      
+      "Events":{
+        "Click": "SimpleNote.HelperForms.LoadSchedulePanel"
+      }      
+    },
+    {
+      "Guid": "bColor",
+      "Type": "Button",
+      "Description": "Color note",
+      "Version": "1.0",
+      "Configuration": {
+        "Size": {
+          "Width": 30,
+          "Height": 30
+        },
+        "FlatStyle": 0,
+        "FlatAppearance": {
+          "BorderSize": "0"
+        },
+        "Image": "%Resources%\\Icons\\color_paleta.png",
+        "Selected": {
+          "Image": "%Resources%\\Icons\\color_paleta.png"
+        }
+      },      
+      "Events":{
+        "Click": "SimpleNote.ChangeColor"
+      }      
+    },        
+    {
+      "Guid": "note_panel",
+      "Type": "Panel",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "Margin": { "All": 0},
+        "Dock": 5
+      },
+      "Controls": [ "text_edit" ]
+    },
+    {
+      "Guid": "text_edit",
+      "Type": "RichTextBox",
+      "Description": "",
+      "Version": "1.0",
+      "Configuration": {
+        "DetectUrls": false,
+        "Multiline": true,
+        "Dock": 5,
+        "BackColor": "White",
+        "ForeColor": "Black",
+        "AutoSize": true,
+        "Location": {"X": 0, "Y": 0},
+        "ScrollBars": 2,
+        "Font": {
+          "familyName": "Arial",
+          "emSize": 10.1
+        }
+      },
+      "Events":{
+        "TextChanged": "&SimpleNote.Text_Changed",
+        "LinkClicked": "SimpleNote.Note_Link_Clicked",
+        "KeyDown": "SimpleNote.ShortCutsKeys", 
+        //"MouseMove": "SimpleNote.SNMouseMove",
+        //"DragEnter": "SimpleNote.BeginDrag",        
+        //"DragDrop": "SimpleNote.Drop",        
+      }
+    }
+  ]
+}

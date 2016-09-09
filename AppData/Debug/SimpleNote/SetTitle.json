@@ -1,0 +1,19 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Set title",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Total_time": 76.64
+    }
+  ],
+  "Name": "Set title",
+  "Description": "Complete note",
+  "Status": "OK",
+  "Total_time": 76.64,
+  "Last_execution_time": "07/06/2016 17:18:34"
+}

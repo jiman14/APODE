@@ -1,0 +1,42 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Drop",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Save reordering notes",
+      "Configuration": {},
+      "Inputs": {
+        "Notes": "MainView.Notes",
+        "NotesLoaded": "NotesPanel.NotesLoaded",
+        "status": "MainView.Status"
+      },
+      "Outputs": {
+        "Notes": "MainView.Notes",
+        "SaveFlag": "MainView.SaveFlag"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.01
+    }
+  ],
+  "Name": "Simple note drop",
+  "Description": "Simple note drop",
+  "Status": "OK",
+  "Total_time": 0.02,
+  "Last_execution_time": "07/06/2016 13:55:25"
+}

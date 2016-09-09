@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Ver menu principal",
+  "Parallel_execution": false,
+  "Description": "Ver menu principal",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+  	{
+      "Namespace": "UI.MainApp",
+      "Guid": "Ver menú contextual principal",
+      "Configuration": { },
+      "Inputs": {  },
+      "Outputs": { }
+    }   
+  ]
+}

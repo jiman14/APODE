@@ -1,0 +1,27 @@
+{
+  "processes": [
+    {
+      "Namespace": "UI.Generics",
+      "Guid": "Load Context Menu",
+      "Configuration": {},
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.3
+    },
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "ResetNoteButtons",
+      "Configuration": {},
+      "Inputs": {
+        "Note": "SimpleNote.Note"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    }
+  ],
+  "Name": "Load context menu",
+  "Description": "Load context menu",
+  "Status": "OK",
+  "Total_time": 0.3,
+  "Last_execution_time": "09/09/2016 12:56:16"
+}

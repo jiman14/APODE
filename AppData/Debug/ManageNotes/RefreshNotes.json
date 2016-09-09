@@ -1,0 +1,56 @@
+{
+  "processes": [
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "ManageNotes.SaveNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.03
+    },
+    {
+      "Namespace": "UI.MainApp",
+      "Guid": "ClearNotes",
+      "Configuration": {},
+      "Inputs": {
+        "status": "MainView.Status",
+        "NotesLoaded": "NotesPanel.NotesLoaded"
+      },
+      "Outputs": {},
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "ManageNotes.NotesLogic",
+      "Guid": "Get notes",
+      "Configuration": {},
+      "Inputs": {
+        "path": "Globals.Data path",
+        "file name": "Globals.Default data file name",
+        "status": "MainView.Status",
+        "Notes": "MainView.Notes"
+      },
+      "Outputs": {
+        "AppStatus": "MainView.AppStatus",
+        "Notes": "MainView.Notes"
+      },
+      "Total_time": 0.0
+    },
+    {
+      "Namespace": "System.Call",
+      "Guid": "Call",
+      "Configuration": {
+        "program": "MainApp.InitializeNotes"
+      },
+      "Inputs": {},
+      "Outputs": {},
+      "Total_time": 0.04
+    }
+  ],
+  "Name": "Refresh notes",
+  "Description": "Load notes",
+  "Status": "OK",
+  "Total_time": 0.07,
+  "Last_execution_time": "09/09/2016 12:56:28"
+}

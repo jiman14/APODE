@@ -1,0 +1,25 @@
+{
+  "processes": []
+}
+1:
+      "Debug_info": [
+        " ---> view guid: a4a4d181-ee02-460a-a588-75930e74a717",
+        " ---> note guid: ec77b2cc-256c-41e0-843c-9576b3ca6c42",
+        " ---> note title: nueva prueba",
+        " ---> note category: cate nueva"
+      ],
+2:
+      "Debug_info": [
+        " ---> view guid: 103ea256-53e3-4f5e-9b6c-01640153b0c7",
+        " ---> note guid: 46a0f5dd-ad66-4412-9efa-51e9fa1e09b8",
+        " ---> note title: otro titulo",
+        " ---> note category: cate otra"
+      ],
+ 3:
+       "Debug_info": [
+        " ---> view guid: ef7af7ff-9421-42b5-b7b5-3850f1f6ebe6",
+        " ---> note guid: dcf77299-f284-479e-a77c-81d2d689c462",
+        " ---> note title: nueva",
+        " ---> note category: cate"
+      ],
+      "Total

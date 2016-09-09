@@ -1,0 +1,17 @@
+{
+  "$schema": "..\\Schemas\\Schema_base_program.json",
+  "Name": "Load note info",
+  "Parallel_execution": false,
+  "Description": "",
+  "Variables": [ ],
+  "Configuration": {},
+  "Logic": [
+    {
+      "Namespace": "UI.SimpleNote",
+      "Guid": "Load note info",
+      "Configuration": { },
+      "Inputs": { "Note": "SimpleNote.Note" },
+      "Outputs": { }
+    },
+  ]
+}
