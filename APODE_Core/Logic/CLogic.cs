@@ -427,7 +427,7 @@ namespace TLogic
         /// <summary>
         /// Run single process
         /// </summary>
-        /// <param name="prc"></param>
+        /// <param name="process_guid"></param>
         private void execute_process(String process_guid)
         {
             switch (process_guid)
