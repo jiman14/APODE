@@ -14,7 +14,7 @@ namespace TLogic
     {
         #region initialize
 
-        CSystem sys;
+        CSystem sys;                    // System class mainly contains errors & debugs behind objects
         TErrors errors;                 // Program error object
         TDebug debug;                   // Debug object
         CViewsManager vm;               // View manager for access all views and controls
@@ -460,7 +460,7 @@ namespace TLogic
                     {
                         // Get program from config (first) or input
                         String Program = (Config_str("program") == "") ? Input_str("program"): Config_str("program");
-                        if (Program != "") vm.CallProgram(event_desc, Program);
+                        if (Program != "") vm.CallProgram(event_desc, Program);                        
                     }
                     break;
 

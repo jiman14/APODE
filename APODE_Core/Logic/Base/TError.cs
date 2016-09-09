@@ -23,6 +23,7 @@ namespace TLogic
         }
         public errorStatus ErrorStatus;
         private JSonFile errorInfo;
+        public bool forceExitProgram = false;
 
         #endregion
 

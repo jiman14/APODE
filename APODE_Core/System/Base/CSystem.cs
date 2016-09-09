@@ -49,5 +49,13 @@ namespace APODE_Core
             errors.reset_UI_errors();
         }
 
+        /// <summary>
+        /// Force active program break
+        /// </summary>
+        public void ForceExit()
+        {
+            ProgramErrors.forceExitProgram = true;
+        }
+
     }
 }

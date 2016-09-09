@@ -64,7 +64,7 @@ namespace TLogic
         {
             if (debug != null) debug.Close();
             sys.ProgramErrors.Close();
-        }
+        }       
 
         /// <summary>
         /// Has errors
@@ -118,6 +118,11 @@ namespace TLogic
                 if (sys.ProgramErrors.hasErrors())
                 {
                     sys.ProgramErrors.addError(String.Format("Aborting program execution '{0}' due errors in: {1}", Name.ToString(), prc_node["Guid"].ToString()));
+                    break;
+                }
+                if (sys.ProgramErrors.forceExitProgram)
+                {
+                    sys.debug.add("Force program exit flag actived by process");
                     break;
                 }
             }
