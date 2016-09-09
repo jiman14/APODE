@@ -4,7 +4,7 @@
 
 APODE es un lanzador de aplicaciones construído siguiendo un modelo de programación orientado a datos estructurados.
 
-La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos. 
+La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos.
 
 Para construir una aplicación ejecutable es necesario definir las siguientes entidades en objetos Json: programas, procesos, vistas y controles.
 
@@ -12,25 +12,26 @@ El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Jso
 
 ## Manual de uso
 
-Para iniciar un proyecto en blanco: 
-1) Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
-2) Abrir la solución con Visual Studio 2015
-3) Compilar la solución
+Para iniciar un proyecto en blanco:
+  1. Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
+  2. Abrir la solución con Visual Studio 2015
+  3. Compilar la solución
 
 A continuación en este manual se describen las entidades básicas y la metodología de programación.
 
 **La carpeta AppData contiene una aplicación de prueba** de gestión de notas (Postit), para iniciarla:
-1) Descargar o clonar el repositorio en local
-2) Abrir la solución con Visual Studio 2015
-3) Compilar la solución y ejecutar
+
+  1. Descargar o clonar el repositorio en local
+  2. Abrir la solución con Visual Studio 2015
+  3. Compilar la solución y ejecutar
 
 El proyecto principal es el llamado “APODE_Core”, este proyecto contiene la funcionalidad necesaria para lanzar aplicaciones.
 
 Las aplicaciones están definidas en dos ubicaciones:
-- La carpeta \AppData
-- El fichero \APODE_Core\Logic\CLogic.cs *
+- La carpeta ``` \AppData ```
+- El fichero ``` \APODE_Core\Logic\CLogic.cs ```
 
-*El código de la aplicación se encuentra dentro de un solo fichero en el CORE para facilitar las labores de depuración y la inserción de código nuevo sin detener el depurador.
+El código de la aplicación se encuentra dentro de un solo fichero en el CORE para facilitar las labores de depuración y la inserción de código nuevo sin detener el depurador.
 
 
 ## Entidades de APODE
@@ -40,7 +41,7 @@ Permitir aportar información a determinadas entidades ayuda a enriquecer el sis
 Los descriptores de las entidades se deben jerarquizar siguiendo el esquema desarrollado en el análisis funcional inicial. De manera que el resultado de dicho análisis se materialice en el germen de la aplicación.
 
 
-**Programas**
+#### **Programas**
 
 Se usa para describir la lógica de la aplicación a alto nivel, la organización jerárquica es libre. Un posible esquema sería el siguiente:
 
@@ -72,10 +73,10 @@ Toda la información añadida a esta estructura será accesible desde cada proce
 }
 ```
 
-El campo “Variables” es un diccionario que facilita la comunicación entre los procesos. Y “Logic” mantiene una lista de procesos que se ejecutarán en el orden establecido. 
+El campo “Variables” es un diccionario que facilita la comunicación entre los procesos. Y “Logic” mantiene una lista de procesos que se ejecutarán en el orden establecido.
 
 
-**Procesos**
+#### **Procesos**
 
 El proceso es la unidad básica y estará asociada a su código por el Guid.
 
@@ -100,7 +101,7 @@ La descripción de las entradas y salidas permite realizar análisis previos par
 ```
 
 
-**Vistas**
+#### **Vistas**
 
 Se usan para describir la estructura de la interfaz de usuario. La organización jerárquica es libre. Un posible esquema sería el siguiente:
 
@@ -122,7 +123,7 @@ El proceso puede acceder en todo momento a la vista activa, sus variables y cont
 Las vistas proporcionan un diccionario de variables accesible a todos los programas que facilita la interacción entre los mismos.
 
 
-**Controles**
+#### **Controles**
 
 El motor de la interfaz de usuario carga dinámicamente los controles, por lo que una vez cargados para ganar en velocidad es aconsejable no eliminarlos sino ocultarlos y recargar su contenido si es necesario.
 El tipo del control puede hacer referencia a librerías externas que se cargarán dinámicamente.
@@ -147,4 +148,3 @@ Las propiedades de los controles están mapeadas dinámicamente, por lo que cual
   }
 }
 ```
-
