@@ -2,8 +2,8 @@
 
 ## Introducción
 
-APODE es un lanzador de aplicaciones construído siguiendo un modelo de programación orientado a datos estructurados [ver Wiki](https://github.com/jiman14/APODE/Wiki).
-
+APODE es un lanzador de aplicaciones construído siguiendo un modelo de programación orientado a datos estructurados [ver Wiki](https://github.com/jiman14/APODE/wiki).
+      
 La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos. 
 
 Para construir una aplicación ejecutable es necesario definir las siguientes entidades en objetos Json: programas, procesos, vistas y controles.
@@ -35,4 +35,4 @@ Las aplicaciones están definidas en dos ubicaciones:
 
 ## Más información
 
-[ver Wiki](https://github.com/jiman14/APODE/Wiki)
+[ver Wiki](https://github.com/jiman14/APODE/wiki)
