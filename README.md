@@ -2,7 +2,7 @@
 
 ## Introducción
 
-APODE es un lanzador de aplicaciones construído siguiendo un modelo de programación orientado a datos estructurados [ver Wiki](https://github.com/jiman14/APODE/wiki). Se puede usar bajo licencia [GPL](https://github.com/jiman14/APODE/blob/master/gpl.md).
+APODE es un lanzador de aplicaciones construído siguiendo un modelo de **P**rogramación **O**rientado a **D**atos **E**structurados (PODE) [ver Wiki](https://github.com/jiman14/APODE/wiki). Se puede usar bajo licencia [GPL](https://github.com/jiman14/APODE/blob/master/gpl.md).
       
 La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos. 
 
