@@ -15,7 +15,7 @@
         "AppStatus": "MainView.AppStatus",
         "NotesLoaded": "NotesPanel.NotesLoaded"
       },
-      "Total_time": 1.36
+      "Total_time": 0.94
     },
     {
       "Namespace": "UI.Generics",
@@ -42,7 +42,7 @@
         "status": "MainView.Status"
       },
       "Outputs": {},
-      "Total_time": 0.03
+      "Total_time": 0.0
     },
     {
       "Namespace": "UI.MainApp",
@@ -64,6 +64,6 @@
   "Name": "Initializae notes",
   "Description": "Initializae notes",
   "Status": "OK",
-  "Total_time": 1.62,
-  "Last_execution_time": "12/09/2016 13:39:22"
+  "Total_time": 1.14,
+  "Last_execution_time": "12/09/2016 13:47:54"
 }

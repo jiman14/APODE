@@ -6,7 +6,7 @@
       "Configuration": {},
       "Inputs": {},
       "Outputs": {},
-      "Total_time": 0.34
+      "Total_time": 0.33
     },
     {
       "Namespace": "UI.SimpleNote",
@@ -22,6 +22,6 @@
   "Name": "Load context menu",
   "Description": "Load context menu",
   "Status": "OK",
-  "Total_time": 0.34,
-  "Last_execution_time": "12/09/2016 13:39:22"
+  "Total_time": 0.33,
+  "Last_execution_time": "12/09/2016 13:47:54"
 }
