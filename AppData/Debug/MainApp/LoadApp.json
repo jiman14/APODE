@@ -10,7 +10,7 @@
       "Outputs": {
         "variable": "MainView.Status"
       },
-      "Total_time": 0.04
+      "Total_time": 0.08
     },
     {
       "Namespace": "System.SetVar",
@@ -50,7 +50,7 @@
         "AppStatus": "MainView.AppStatus",
         "Notes": "MainView.Notes"
       },
-      "Total_time": 0.0
+      "Total_time": 0.02
     },
     {
       "Namespace": "System.Call",
@@ -60,7 +60,7 @@
       },
       "Inputs": {},
       "Outputs": {},
-      "Total_time": 1.84
+      "Total_time": 1.65
     },
     {
       "Namespace": "System.Call",
@@ -71,7 +71,7 @@
       },
       "Inputs": {},
       "Outputs": {},
-      "Total_time": 0.0
+      "Total_time": 0.1
     },
     {
       "Namespace": "System.Keyboard",
@@ -85,6 +85,6 @@
   "Name": "Load application program",
   "Description": "Load application program",
   "Status": "OK",
-  "Total_time": 1.9,
-  "Last_execution_time": "09/09/2016 12:56:16"
+  "Total_time": 1.95,
+  "Last_execution_time": "12/09/2016 13:39:22"
 }
