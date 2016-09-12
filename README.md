@@ -12,13 +12,13 @@ El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Jso
 
 ## Objetivos de APODE
 
-+ Non stop programming | programación en caliente
++ Non stop programming | **programación en caliente**: 
     Ahorrar tiempo de programación evitando tener que compilar cada vez que se realiza un cambio. No solo permite cambiar detalles de diseño sino añadir funcionalidad: métodos, eventos y pantallas sobre la marcha.
-+ Compatibilidad JSON
++ **Compatibilidad JSON**: 
     Facilitar el acceso a la información, ayudar en la depuración y en la integración con otros sistemas.
-+ Almacenamiento de datos en bases de datos de documentos o sistemas de ficheros
++ Almacenamiento de datos en **bases de datos orientadas a documentos** o sistemas de ficheros:
     Disminuir la complejidad de la capa de acceso a datos y proveer de un sistema con alta escalabilidad como MongoDB.
-+ Facilitar el paralelismo en el código
++ Facilitar el **paralelismo en el código**: 
     Un sistema de alto nivel para gestionar programas ayuda a entender el funcionamiento general y a marcar las tareas que se pueden ejecutar en paralelo. 
 
 ## Manual de uso
