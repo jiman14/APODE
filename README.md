@@ -35,4 +35,6 @@ Las aplicaciones están definidas en dos ubicaciones:
 
 ## Más información
 
-[ver Wiki](https://github.com/jiman14/APODE/wiki)
+Para más información [ver Wiki](https://github.com/jiman14/APODE/wiki)
+
+Contacto: info.apode(@)gmail.com
