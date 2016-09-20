@@ -24,16 +24,16 @@ El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Jso
 ## Manual de uso
 
 Para iniciar un proyecto en blanco: 
-1) Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
-2) Abrir la solución con Visual Studio 2015
-3) Compilar la solución
+1. Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
+2. Abrir la solución con Visual Studio 2015
+3. Compilar la solución
 
 A continuación en este manual se describen las entidades básicas y la metodología de programación.
 
 **La carpeta AppData contiene una aplicación de prueba** de gestión de notas (Postit), para iniciarla:
-1) Descargar o clonar el repositorio en local
-2) Abrir la solución con Visual Studio 2015
-3) Compilar la solución y ejecutar
+1. Descargar o clonar el repositorio en local
+2. Abrir la solución con Visual Studio 2015
+3. Compilar la solución y ejecutar
 
 El proyecto principal es el llamado “APODE_Core”, este proyecto contiene la funcionalidad necesaria para lanzar aplicaciones.
 
