@@ -6,9 +6,9 @@ APODE es un lanzador de aplicaciones construído siguiendo un modelo de **P**rog
       
 La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos. 
 
-Para construir una aplicación ejecutable es necesario definir las siguientes entidades en objetos Json: programas, procesos, vistas y controles.
+Para construir una aplicación ejecutable es necesario definir las siguientes entidades en objetos JSON: programas, procesos, vistas y controles.
 
-El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Json para almacenar toda la información. Transcribirlo a javascript bajo nodejs será un próximo hito.
+El código actual está basado en C# .Net 4.5 (VisualStudio 2015) y usa JSON para almacenar toda la información. Transcribirlo a JavaScript bajo Node.js será un próximo hito.
 
 ## Objetivos de APODE
 
@@ -25,7 +25,7 @@ El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Jso
 
 Para iniciar un proyecto en blanco: 
 1) Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
-2) Abrir la solución con Visual Studio 2015
+2) Abrir la solución con VisualStudio 2015
 3) Compilar la solución
 
 A continuación en este manual se describen las entidades básicas y la metodología de programación.
