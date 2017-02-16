@@ -1,8 +1,8 @@
-# APODE
+# Lanzador ARQODE 
 
 ## Introducción
 
-APODE es un lanzador de aplicaciones construído siguiendo un modelo de **P**rogramación **O**rientado a **D**atos **E**structurados (PODE) [ver Wiki](https://github.com/jiman14/APODE/wiki). Se puede usar bajo licencia [GPL](https://github.com/jiman14/APODE/blob/master/gpl.md).
+El lanzador de aplicaciones ARQODE está construído siguiendo un modelo de **P**rogramación **O**rientado a **D**atos **E**structurados (PODE) [ver Wiki](https://github.com/jiman14/APODE/wiki). Se puede usar bajo licencia [GPL](https://github.com/jiman14/APODE/blob/master/gpl.md).
       
 La aplicación consta de dos motores, uno de ejecución de programas y otro que actúa de manejador de vistas, este último permite la carga dinámica de controles gráficos. 
 
@@ -10,7 +10,7 @@ Para construir una aplicación ejecutable es necesario definir las siguientes en
 
 El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Json para almacenar toda la información. Transcribirlo a javascript bajo nodejs será un próximo hito.
 
-## Objetivos de APODE
+## Objetivos de ARQODE
 
 + Non stop programming | **programación Non-Stop (en caliente)**: 
     Ahorrar tiempo de programación evitando tener que compilar cada vez que se realiza un cambio. No solo permite cambiar detalles de diseño sino añadir funcionalidad: métodos, eventos y pantallas sobre la marcha.
@@ -24,7 +24,7 @@ El código actual está escrito bajo Visual Studio 2015 en c# .Net 4.5 y usa Jso
 ## Manual de uso
 
 Para iniciar un proyecto en blanco: 
-- Descomprimir el paquete "APODE - proyecto vacío.rar" que hay en la raiz del proyecto.
+- Descomprimir el paquete "ARQODE - proyecto vacío.rar" que hay en la raiz del proyecto.
 - Abrir la solución con Visual Studio 2015
 - Compilar la solución
 
@@ -48,4 +48,4 @@ Las aplicaciones están definidas en dos ubicaciones:
 
 Para más información [ver Wiki](https://github.com/jiman14/APODE/wiki)
 
-Contacto: info.apode(@)gmail.com
+Contacto: info.arqode(@)gmail.com
